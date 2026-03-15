@@ -1,0 +1,3 @@
+# RASC version and installation file
+Unknown
+F:\FSP_RASC_2024_12\software\eclipse\rascc.exe
