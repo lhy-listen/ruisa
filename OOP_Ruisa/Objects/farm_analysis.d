@@ -1,4 +1,6 @@
-./objects/hal_entry_1.o: src\hal_entry.c ra_gen\hal_data.h \
+./objects/farm_analysis.o: src\farm_analysis.c \
+  G:\rasc\workspace\OOP_Ruisa\farm_analysis.h \
+  G:\rasc\workspace\OOP_Ruisa\driver_uart.h ra_gen\hal_data.h \
   ra\fsp\inc\api\bsp_api.h ra\fsp\inc\api\fsp_common_api.h \
   ra\fsp\inc\fsp_version.h ra_cfg\fsp_cfg\bsp\bsp_cfg.h \
   ra_gen\bsp_clock_cfg.h ra_cfg\fsp_cfg\bsp\bsp_mcu_family_cfg.h \
@@ -42,8 +44,4 @@
   ra_cfg\fsp_cfg\bsp\bsp_pin_cfg.h ra\fsp\inc\instances\r_sci_i2c.h \
   ra_cfg\fsp_cfg\r_sci_i2c_cfg.h ra\fsp\inc\api\r_i2c_master_api.h \
   ra\fsp\inc\api\r_transfer_api.h ra\fsp\inc\instances\r_sci_uart.h \
-  ra\fsp\inc\api\r_uart_api.h ra_cfg\fsp_cfg\r_sci_uart_cfg.h \
-  G:\rasc\workspace\OOP_Ruisa\driver_uart.h \
-  G:\rasc\workspace\OOP_Ruisa\driver_dht22.h \
-  G:\rasc\workspace\OOP_Ruisa\driver_bh1750.h \
-  G:\rasc\workspace\OOP_Ruisa\farm_analysis.h
+  ra\fsp\inc\api\r_uart_api.h ra_cfg\fsp_cfg\r_sci_uart_cfg.h

@@ -399,6 +399,16 @@
               <FileType>5</FileType>
               <FilePath>.\driver_bh1750.h</FilePath>
             </File>
+            <File>
+              <FileName>farm_analysis.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\farm_analysis.h</FilePath>
+            </File>
+            <File>
+              <FileName>farm_analysis.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\farm_analysis.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

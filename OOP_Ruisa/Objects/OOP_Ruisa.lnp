@@ -1,4 +1,5 @@
 --cpu=Cortex-M33
+".\objects\farm_analysis.o"
 ".\objects\hal_entry_1.o"
 ".\objects\hal_warmstart_1.o"
 ".\objects\driver_dht22_1.o"

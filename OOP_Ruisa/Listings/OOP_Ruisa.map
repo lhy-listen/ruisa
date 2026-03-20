@@ -4,19 +4,49 @@ Component: Arm Compiler for Embedded 6.23 Tool: armlink [5f102400]
 
 Section Cross References
 
+    farm_analysis.o(.text.Farm_Data_Init) refers to farm_analysis.o(.bss.g_farm_data) for g_farm_data
+    farm_analysis.o(.ARM.exidx.text.Farm_Data_Init) refers to farm_analysis.o(.text.Farm_Data_Init) for [Anonymous Symbol]
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to driver_uart_1.o(.data.UartPc) for UartPc
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to driver_uart_1.o(.text.Uart_Printf) for Uart_Printf
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to farm_analysis.o(.bss.g_farm_data) for g_farm_data
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to f2d.o(.text) for __aeabi_f2d
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to farm_analysis.o(.rodata.str1.1) for .L.str.1
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to driver_uart_1.o(.data.Uart8) for Uart8
+    farm_analysis.o(.text.Farm_Data_Analysis) refers to driver_uart_1.o(.text.Uart_Send) for Uart_Send
+    farm_analysis.o(.ARM.exidx.text.Farm_Data_Analysis) refers to farm_analysis.o(.text.Farm_Data_Analysis) for [Anonymous Symbol]
+    hal_entry_1.o(.text) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.text.sci_i2c_master_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.sci_i2c_master_callback) refers to hal_entry_1.o(.bss.g_i2c_aborted) for g_i2c_aborted
     hal_entry_1.o(.text.sci_i2c_master_callback) refers to hal_entry_1.o(.bss.g_i2c_completed) for g_i2c_completed
+    hal_entry_1.o(.ARM.exidx.text.sci_i2c_master_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.sci_i2c_master_callback) refers to hal_entry_1.o(.text.sci_i2c_master_callback) for [Anonymous Symbol]
+    hal_entry_1.o(.text.uart2_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.uart2_callback) refers to driver_uart_1.o(.data.UartSensor) for UartSensor
+    hal_entry_1.o(.ARM.exidx.text.uart2_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.uart2_callback) refers to hal_entry_1.o(.text.uart2_callback) for [Anonymous Symbol]
+    hal_entry_1.o(.text.uart4_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.uart4_callback) refers to driver_uart_1.o(.data.UartHmi) for UartHmi
+    hal_entry_1.o(.ARM.exidx.text.uart4_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.uart4_callback) refers to hal_entry_1.o(.text.uart4_callback) for [Anonymous Symbol]
+    hal_entry_1.o(.text.uart7_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.uart7_callback) refers to driver_uart_1.o(.data.UartPc) for UartPc
+    hal_entry_1.o(.ARM.exidx.text.uart7_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.uart7_callback) refers to hal_entry_1.o(.text.uart7_callback) for [Anonymous Symbol]
+    hal_entry_1.o(.text.uart9_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.uart9_callback) refers to driver_uart_1.o(.data.UartFace) for UartFace
+    hal_entry_1.o(.ARM.exidx.text.uart9_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.uart9_callback) refers to hal_entry_1.o(.text.uart9_callback) for [Anonymous Symbol]
+    hal_entry_1.o(.text.uart8_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.uart8_callback) refers to driver_uart_1.o(.data.Uart8) for Uart8
+    hal_entry_1.o(.ARM.exidx.text.uart8_callback) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.uart8_callback) refers to hal_entry_1.o(.text.uart8_callback) for [Anonymous Symbol]
+    hal_entry_1.o(.text.Hmi_SendCmd) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.text.Hmi_SendCmd) refers to printfa.o(i.__0snprintf) for __2snprintf
+    hal_entry_1.o(.text.Hmi_SendCmd) refers to driver_uart_1.o(.data.UartHmi) for UartHmi
+    hal_entry_1.o(.text.Hmi_SendCmd) refers to driver_uart_1.o(.text.Uart_Send) for Uart_Send
+    hal_entry_1.o(.ARM.exidx.text.Hmi_SendCmd) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.ARM.exidx.text.Hmi_SendCmd) refers to hal_entry_1.o(.text.Hmi_SendCmd) for [Anonymous Symbol]
+    hal_entry_1.o(.text.hal_entry) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.data.UartSensor) for UartSensor
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.text.Uart_Init) for Uart_Init
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.data.UartHmi) for UartHmi
@@ -24,46 +54,76 @@ Section Cross References
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.data.UartFace) for UartFace
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.data.Uart8) for Uart8
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.text.Uart_StartRx) for Uart_StartRx
+    hal_entry_1.o(.text.hal_entry) refers to farm_analysis.o(.text.Farm_Data_Init) for Farm_Data_Init
     hal_entry_1.o(.text.hal_entry) refers to hal_data.o(.rodata.g_i2c5) for g_i2c5
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.g_bh1750) for g_bh1750
     hal_entry_1.o(.text.hal_entry) refers to driver_bh1750_1.o(.text.Bh1750_Init) for Bh1750_Init
-    hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.text.Uart_Printf) for Uart_Printf
     hal_entry_1.o(.text.hal_entry) refers to bsp_delay.o(.text.R_BSP_SoftwareDelay) for R_BSP_SoftwareDelay
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick) for Task_DHT22.dht22_read_tick
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx) for Task_HMI.hmi_rx_idx
+    hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.text.Uart_Printf) for Uart_Printf
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.rx_idx) for Task_CO2.rx_idx
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_HMI.hmi_rx_frame) for Task_HMI.hmi_rx_frame
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick) for Task_Uart8.rx_idle_tick
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Light.light_tick) for Task_Light.light_tick
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick) for Task_HMI.hmi_rx_idle_tick
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.g_face_state) for g_face_state
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Face.sci9_rx_idx) for Task_Face.sci9_rx_idx
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick) for Task_Face.sci9_rx_idle_tick
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick) for Task_DHT22.dht22_read_tick
     hal_entry_1.o(.text.hal_entry) refers to driver_dht22_1.o(.data.Dht22) for Dht22
     hal_entry_1.o(.text.hal_entry) refers to driver_dht22_1.o(.text.Dht22_Read) for Dht22_Read
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.rodata.str1.1) for .L.str.4
+    hal_entry_1.o(.text.hal_entry) refers to farm_analysis.o(.bss.g_farm_data) for g_farm_data
     hal_entry_1.o(.text.hal_entry) refers to printfa.o(i.__0snprintf) for __2snprintf
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.text.Hmi_SendCmd) for Hmi_SendCmd
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.rx_index) for Task_CO2.rx_index
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.rx_frame) for Task_CO2.rx_frame
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.rx_idle_tick) for Task_CO2.rx_idle_tick
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.low_co2_count) for Task_CO2.low_co2_count
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.add_rest_count) for Task_CO2.add_rest_count
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_CO2.add_send_count) for Task_CO2.add_send_count
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick) for Task_HMI.hmi_rx_idle_tick
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx) for Task_HMI.hmi_rx_idx
     hal_entry_1.o(.text.hal_entry) refers to memcmp.o(.text) for memcmp
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.rodata.Task_HMI.enroll_cmd) for Task_HMI.enroll_cmd
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.rodata.str1.1) for .L.str.10
     hal_entry_1.o(.text.hal_entry) refers to driver_uart_1.o(.text.Uart_Send) for Uart_Send
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.rodata.Task_HMI.reset_cmd) for Task_HMI.reset_cmd
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.g_face_state) for g_face_state
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.g_face_delay_tick) for g_face_delay_tick
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.rodata.Task_HMI.enroll_cmd) for Task_HMI.enroll_cmd
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.rodata.Task_Face.reco_cmd) for Task_Face.reco_cmd
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Face.sci9_rx_idx) for Task_Face.sci9_rx_idx
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Face.sci9_rx_frame) for Task_Face.sci9_rx_frame
-    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick) for Task_Face.sci9_rx_idle_tick
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Uart8.rx_idx) for Task_Uart8.rx_idx
     hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Uart8.rx_frame) for Task_Uart8.rx_frame
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick) for Task_Uart8.rx_idle_tick
+    hal_entry_1.o(.text.hal_entry) refers to strstr.o(.text) for strstr
+    hal_entry_1.o(.text.hal_entry) refers to __0sscanf.o(.text) for __0sscanf
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Light.light_tick) for Task_Light.light_tick
     hal_entry_1.o(.text.hal_entry) refers to driver_bh1750_1.o(.text.Bh1750_ReadLux) for Bh1750_ReadLux
-    hal_entry_1.o(.text.hal_entry) refers to f2d.o(.text) for __aeabi_f2d
+    hal_entry_1.o(.text.hal_entry) refers to hal_entry_1.o(.bss.Task_Analysis.analysis_tick) for Task_Analysis.analysis_tick
+    hal_entry_1.o(.text.hal_entry) refers to farm_analysis.o(.text.Farm_Data_Analysis) for Farm_Data_Analysis
+    hal_entry_1.o(.ARM.exidx.text.hal_entry) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_entry_1.o(.ARM.exidx.text.hal_entry) refers to hal_entry_1.o(.text.hal_entry) for [Anonymous Symbol]
-    hal_entry_1.o(.text.Hmi_SendCmd) refers to printfa.o(i.__0snprintf) for __2snprintf
-    hal_entry_1.o(.text.Hmi_SendCmd) refers to driver_uart_1.o(.data.UartHmi) for UartHmi
-    hal_entry_1.o(.text.Hmi_SendCmd) refers to driver_uart_1.o(.text.Uart_Send) for Uart_Send
-    hal_entry_1.o(.ARM.exidx.text.Hmi_SendCmd) refers to hal_entry_1.o(.text.Hmi_SendCmd) for [Anonymous Symbol]
+    hal_entry_1.o(.bss.g_i2c_completed) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.g_i2c_aborted) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.g_bh1750) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_CO2.rx_frame) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_CO2.rx_idx) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_CO2.rx_idle_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_CO2.low_co2_count) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_CO2.add_rest_count) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_CO2.add_send_count) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_HMI.hmi_rx_frame) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.rodata.Task_HMI.reset_cmd) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.g_face_state) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.g_face_delay_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.rodata.Task_HMI.enroll_cmd) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.rodata.str1.1) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Face.sci9_rx_frame) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Face.sci9_rx_idx) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.rodata.Task_Face.reco_cmd) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Uart8.rx_frame) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Uart8.rx_idx) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Light.light_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    hal_entry_1.o(.bss.Task_Analysis.analysis_tick) refers (Special) to scanf_fp.o(.text) for _scanf_real
     hal_warmstart_1.o(.text.R_BSP_WarmStart) refers to common_data.o(.bss.g_ioport_ctrl) for g_ioport_ctrl
     hal_warmstart_1.o(.text.R_BSP_WarmStart) refers to pin_data.o(.rodata.g_bsp_pin_cfg) for g_bsp_pin_cfg
     hal_warmstart_1.o(.text.R_BSP_WarmStart) refers to r_ioport.o(.text.R_IOPORT_Open) for R_IOPORT_Open
@@ -569,6 +629,14 @@ Section Cross References
     printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    __0sscanf.o(.text) refers to scanf_char.o(.text) for __vfscanf_char
+    __0sscanf.o(.text) refers to _sgetc.o(.text) for _sgetc
+    scanf_fp.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    scanf_fp.o(.text) refers to dfltul.o(.text) for __aeabi_ul2d
+    scanf_fp.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    scanf_fp.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    scanf_fp.o(.text) refers to scanf_fp.o(i._is_digit) for _is_digit
+    scanf_fp.o(.text) refers to d2f.o(.text) for __aeabi_d2f
     f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     fputc.o(i.fputc) refers (Special) to iusesemip.o(.text) for __I$use$semihosting$fputc
     fputc.o(i.fputc) refers (Special) to semi.o(.text) for __semihosting_library_function
@@ -576,6 +644,8 @@ Section Cross References
     fputc_h.o(i._fputc$hlt) refers (Special) to semi.o(.text) for __semihosting_library_function
     uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
     uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    scanf_char.o(.text) refers to _scanf.o(.text) for __vfscanf
+    scanf_char.o(.text) refers to isspace_c.o(.text) for isspace
     dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
     dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
@@ -584,19 +654,31 @@ Section Cross References
     dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
     ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfltul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltul.o(.text) refers to depilogue.o(.text) for _double_epilogue
     dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
     dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
     cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    isspace_c.o(.text) refers to ctype_c.o(.text) for __ctype_lookup
+    _scanf.o(.text) refers (Weak) to scanf_fp.o(.text) for _scanf_real
+    fepilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
     depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    ctype_c.o(.text) refers to ctype_c.o(.constdata) for .constdata
+    scanf_fp.o(i._is_digit) refers (Special) to iusefp.o(.text) for __I$use$fp
 
 
 ==============================================================================
 
 Removing Unused input sections from the image.
 
+    Removing farm_analysis.o(.text), (0 bytes).
+    Removing farm_analysis.o(.ARM.exidx.text.Farm_Data_Init), (8 bytes).
+    Removing farm_analysis.o(.ARM.exidx.text.Farm_Data_Analysis), (8 bytes).
     Removing hal_entry_1.o(.text), (0 bytes).
     Removing hal_entry_1.o(.ARM.exidx.text.sci_i2c_master_callback), (8 bytes).
     Removing hal_entry_1.o(.ARM.exidx.text.uart2_callback), (8 bytes).
@@ -604,8 +686,8 @@ Removing Unused input sections from the image.
     Removing hal_entry_1.o(.ARM.exidx.text.uart7_callback), (8 bytes).
     Removing hal_entry_1.o(.ARM.exidx.text.uart9_callback), (8 bytes).
     Removing hal_entry_1.o(.ARM.exidx.text.uart8_callback), (8 bytes).
-    Removing hal_entry_1.o(.ARM.exidx.text.hal_entry), (8 bytes).
     Removing hal_entry_1.o(.ARM.exidx.text.Hmi_SendCmd), (8 bytes).
+    Removing hal_entry_1.o(.ARM.exidx.text.hal_entry), (8 bytes).
     Removing hal_warmstart_1.o(.text), (0 bytes).
     Removing hal_warmstart_1.o(.ARM.exidx.text.R_BSP_WarmStart), (8 bytes).
     Removing driver_dht22_1.o(.text), (0 bytes).
@@ -762,7 +844,7 @@ Removing Unused input sections from the image.
     Removing pin_data.o(.text), (0 bytes).
     Removing vector_data.o(.text), (0 bytes).
 
-164 unused section(s) (total 2741 bytes) removed from the image.
+167 unused section(s) (total 2757 bytes) removed from the image.
 
 ==============================================================================
 
@@ -773,6 +855,8 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_c.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_c.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  ldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
@@ -799,13 +883,22 @@ Image Symbol Table
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/string/strstr.c         0x00000000   Number         0  strstr.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  __0sscanf.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  scanf_fp.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  scanf_char.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _sgetc.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _scanf.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     __tagsym$$used.0                         0x00000000   Number         0  startup.o(.fixed_vectors)
     bsp_clocks.c                             0x00000000   Number         0  bsp_clocks.o ABSOLUTE
@@ -829,6 +922,7 @@ Image Symbol Table
     driver_bh1750.c                          0x00000000   Number         0  driver_bh1750_1.o ABSOLUTE
     driver_dht22.c                           0x00000000   Number         0  driver_dht22_1.o ABSOLUTE
     driver_uart.c                            0x00000000   Number         0  driver_uart_1.o ABSOLUTE
+    farm_analysis.c                          0x00000000   Number         0  farm_analysis.o ABSOLUTE
     hal_data.c                               0x00000000   Number         0  hal_data.o ABSOLUTE
     hal_entry.c                              0x00000000   Number         0  hal_entry_1.o ABSOLUTE
     hal_warmstart.c                          0x00000000   Number         0  hal_warmstart_1.o ABSOLUTE
@@ -843,187 +937,208 @@ Image Symbol Table
     __tagsym$$used.0                         0x00000040   Number         0  vector_data.o(.application_vectors)
     .text                                    0x000000ec   Section        0  memcpya.o(.text)
     .text                                    0x00000110   Section        0  memseta.o(.text)
-    .text                                    0x00000134   Section        0  memcmp.o(.text)
-    .text                                    0x0000014e   Section        0  f2d.o(.text)
-    .text                                    0x00000174   Section        0  uidiv.o(.text)
-    .text                                    0x000001a0   Section        0  uldiv.o(.text)
-    .text                                    0x00000202   Section        0  iusefp.o(.text)
-    .text                                    0x00000202   Section        0  dadd.o(.text)
-    .text                                    0x00000350   Section        0  dmul.o(.text)
-    .text                                    0x00000434   Section        0  ddiv.o(.text)
-    .text                                    0x00000512   Section        0  dfixul.o(.text)
-    .text                                    0x00000544   Section       48  cdrcmple.o(.text)
-    .text                                    0x00000574   Section        0  llshl.o(.text)
-    .text                                    0x00000592   Section        0  llushr.o(.text)
-    .text                                    0x000005b2   Section        0  llsshr.o(.text)
-    .text                                    0x000005d6   Section        0  depilogue.o(.text)
-    [Anonymous Symbol]                       0x00000690   Section        0  driver_bh1750_1.o(.text.Bh1750_Init)
-    [Anonymous Symbol]                       0x000006d8   Section        0  driver_bh1750_1.o(.text.Bh1750_ReadLux)
-    [Anonymous Symbol]                       0x0000078c   Section        0  startup.o(.text.Default_Handler)
-    [Anonymous Symbol]                       0x00000790   Section        0  driver_dht22_1.o(.text.Dht22_Read)
-    Hmi_SendCmd                              0x0000093d   Thumb Code    52  hal_entry_1.o(.text.Hmi_SendCmd)
-    [Anonymous Symbol]                       0x0000093c   Section        0  hal_entry_1.o(.text.Hmi_SendCmd)
-    [Anonymous Symbol]                       0x00000974   Section        0  bsp_group_irq.o(.text.NMI_Handler)
-    [Anonymous Symbol]                       0x000009b8   Section        0  bsp_clocks.o(.text.R_BSP_Init_RTC)
-    [Anonymous Symbol]                       0x00000a32   Section        0  bsp_register_protection.o(.text.R_BSP_RegisterProtectDisable)
-    [Anonymous Symbol]                       0x00000a80   Section        0  bsp_register_protection.o(.text.R_BSP_RegisterProtectEnable)
-    [Anonymous Symbol]                       0x00000ad2   Section        0  bsp_delay.o(.text.R_BSP_SoftwareDelay)
-    [Anonymous Symbol]                       0x00000b56   Section        0  bsp_clocks.o(.text.R_BSP_SubClockStabilizeWaitAfterReset)
-    [Anonymous Symbol]                       0x00000b58   Section        0  hal_warmstart_1.o(.text.R_BSP_WarmStart)
-    [Anonymous Symbol]                       0x00000b72   Section        0  r_ioport.o(.text.R_IOPORT_Open)
-    [Anonymous Symbol]                       0x00000b88   Section        0  r_ioport.o(.text.R_IOPORT_PinCfg)
-    [Anonymous Symbol]                       0x00000c3a   Section        0  r_ioport.o(.text.R_IOPORT_PinRead)
-    [Anonymous Symbol]                       0x00000c5c   Section        0  r_ioport.o(.text.R_IOPORT_PinWrite)
-    [Anonymous Symbol]                       0x00000c84   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Abort)
-    [Anonymous Symbol]                       0x00000cac   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_CallbackSet)
-    [Anonymous Symbol]                       0x00000cba   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Close)
-    [Anonymous Symbol]                       0x00000d10   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Open)
-    [Anonymous Symbol]                       0x00000e6a   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Read)
-    [Anonymous Symbol]                       0x00000e7a   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_SlaveAddressSet)
-    [Anonymous Symbol]                       0x00000e84   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_StatusGet)
-    [Anonymous Symbol]                       0x00000e9c   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Write)
-    [Anonymous Symbol]                       0x00000eac   Section        0  r_sci_uart.o(.text.R_SCI_UART_Open)
-    [Anonymous Symbol]                       0x000011e8   Section        0  r_sci_uart.o(.text.R_SCI_UART_Read)
-    [Anonymous Symbol]                       0x000011f2   Section        0  r_sci_uart.o(.text.R_SCI_UART_Write)
-    [Anonymous Symbol]                       0x00001240   Section        0  startup.o(.text.Reset_Handler)
-    [Anonymous Symbol]                       0x0000124a   Section        0  bsp_clocks.o(.text.SystemCoreClockUpdate)
-    [Anonymous Symbol]                       0x00001278   Section        0  system.o(.text.SystemInit)
-    SystemRuntimeInit                        0x0000131d   Thumb Code    90  system.o(.text.SystemRuntimeInit)
-    [Anonymous Symbol]                       0x0000131c   Section        0  system.o(.text.SystemRuntimeInit)
-    [Anonymous Symbol]                       0x00001376   Section        0  driver_uart_1.o(.text.Uart_Init)
-    [Anonymous Symbol]                       0x00001380   Section        0  driver_uart_1.o(.text.Uart_Printf)
-    [Anonymous Symbol]                       0x000013d0   Section        0  driver_uart_1.o(.text.Uart_Send)
-    [Anonymous Symbol]                       0x000013f0   Section        0  driver_uart_1.o(.text.Uart_StartRx)
-    bh1750_write_cmd                         0x000013fd   Thumb Code   112  driver_bh1750_1.o(.text.bh1750_write_cmd)
-    [Anonymous Symbol]                       0x000013fc   Section        0  driver_bh1750_1.o(.text.bh1750_write_cmd)
-    [Anonymous Symbol]                       0x0000146c   Section        0  bsp_clocks.o(.text.bsp_clock_init)
-    [Anonymous Symbol]                       0x000015a8   Section        0  bsp_common.o(.text.bsp_init_internal)
-    [Anonymous Symbol]                       0x000015ac   Section        0  bsp_irq.o(.text.bsp_irq_cfg)
-    sw_delay_loop                            0x00001636   Number         0  bsp_delay.o(.text.bsp_prv_software_delay_loop)
-    [Anonymous Symbol]                       0x00001636   Section        0  bsp_delay.o(.text.bsp_prv_software_delay_loop)
-    bsp_vbatt_init                           0x00001641   Thumb Code   204  r_ioport.o(.text.bsp_vbatt_init)
-    [Anonymous Symbol]                       0x00001640   Section        0  r_ioport.o(.text.bsp_vbatt_init)
-    g_vbatt_pins_input                       0x0000170c   Number         0  r_ioport.o(.text.bsp_vbatt_init)
-    [Anonymous Symbol]                       0x00001718   Section        0  hal_entry_1.o(.text.hal_entry)
-    [Anonymous Symbol]                       0x00001f0c   Section        0  main.o(.text.main)
-    r_ioport_pins_config                     0x00001f19   Thumb Code   192  r_ioport.o(.text.r_ioport_pins_config)
-    [Anonymous Symbol]                       0x00001f18   Section        0  r_ioport.o(.text.r_ioport_pins_config)
-    r_sci_uart_call_callback                 0x00001fd9   Thumb Code    64  r_sci_uart.o(.text.r_sci_uart_call_callback)
-    [Anonymous Symbol]                       0x00001fd8   Section        0  r_sci_uart.o(.text.r_sci_uart_call_callback)
-    [Anonymous Symbol]                       0x00002018   Section        0  hal_entry_1.o(.text.sci_i2c_master_callback)
-    sci_i2c_read_write                       0x0000204b   Thumb Code   152  r_sci_i2c.o(.text.sci_i2c_read_write)
-    [Anonymous Symbol]                       0x0000204a   Section        0  r_sci_i2c.o(.text.sci_i2c_read_write)
-    [Anonymous Symbol]                       0x000020e2   Section        0  r_sci_i2c.o(.text.sci_i2c_tei_isr)
-    [Anonymous Symbol]                       0x000021fe   Section        0  r_sci_i2c.o(.text.sci_i2c_txi_isr)
-    [Anonymous Symbol]                       0x00002326   Section        0  r_sci_uart.o(.text.sci_uart_eri_isr)
-    [Anonymous Symbol]                       0x00002390   Section        0  r_sci_uart.o(.text.sci_uart_rxi_isr)
-    [Anonymous Symbol]                       0x00002418   Section        0  r_sci_uart.o(.text.sci_uart_tei_isr)
-    [Anonymous Symbol]                       0x00002462   Section        0  r_sci_uart.o(.text.sci_uart_txi_isr)
-    [Anonymous Symbol]                       0x000024ea   Section        0  hal_entry_1.o(.text.uart2_callback)
-    [Anonymous Symbol]                       0x00002500   Section        0  hal_entry_1.o(.text.uart4_callback)
-    [Anonymous Symbol]                       0x00002528   Section        0  hal_entry_1.o(.text.uart7_callback)
-    [Anonymous Symbol]                       0x0000253e   Section        0  hal_entry_1.o(.text.uart8_callback)
-    [Anonymous Symbol]                       0x00002566   Section        0  hal_entry_1.o(.text.uart9_callback)
-    i.__0snprintf                            0x00002590   Section        0  printfa.o(i.__0snprintf)
-    i.__0vsnprintf                           0x000025c4   Section        0  printfa.o(i.__0vsnprintf)
-    _fp_digits                               0x000025f9   Thumb Code   366  printfa.o(i._fp_digits)
-    i._fp_digits                             0x000025f8   Section        0  printfa.o(i._fp_digits)
-    _printf_core                             0x0000277d   Thumb Code  1744  printfa.o(i._printf_core)
-    i._printf_core                           0x0000277c   Section        0  printfa.o(i._printf_core)
-    _printf_post_padding                     0x00002e59   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_post_padding                   0x00002e58   Section        0  printfa.o(i._printf_post_padding)
-    _printf_pre_padding                      0x00002e7d   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._printf_pre_padding                    0x00002e7c   Section        0  printfa.o(i._printf_pre_padding)
-    _snputc                                  0x00002eab   Thumb Code    22  printfa.o(i._snputc)
-    i._snputc                                0x00002eaa   Section        0  printfa.o(i._snputc)
-    Task_Face.reco_cmd                       0x00002ec0   Data           8  hal_entry_1.o(.rodata.Task_Face.reco_cmd)
-    [Anonymous Symbol]                       0x00002ec0   Section        0  hal_entry_1.o(.rodata.Task_Face.reco_cmd)
-    Task_HMI.enroll_cmd                      0x00002ec8   Data           6  hal_entry_1.o(.rodata.Task_HMI.enroll_cmd)
-    [Anonymous Symbol]                       0x00002ec8   Section        0  hal_entry_1.o(.rodata.Task_HMI.enroll_cmd)
-    Task_HMI.reset_cmd                       0x00002ece   Data           6  hal_entry_1.o(.rodata.Task_HMI.reset_cmd)
-    [Anonymous Symbol]                       0x00002ece   Section        0  hal_entry_1.o(.rodata.Task_HMI.reset_cmd)
-    copy_list                                0x00002ed4   Data         128  bsp_linker.o(.rodata.copy_list)
-    [Anonymous Symbol]                       0x00002ed4   Section        0  bsp_linker.o(.rodata.copy_list)
-    g_prcr_masks                             0x000030b4   Data          10  bsp_register_protection.o(.rodata.g_prcr_masks)
-    [Anonymous Symbol]                       0x000030b4   Section        0  bsp_register_protection.o(.rodata.g_prcr_masks)
-    __tagsym$$used.10                        0x000032f0   Number         0  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_END)
-    __tagsym$$used.9                         0x000032f4   Number         0  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_START)
-    __tagsym$$used.12                        0x000032f8   Number         0  bsp_linker.o(.rodata.gp_ddsc_FLASH_END)
-    __tagsym$$used.13                        0x000032fc   Number         0  bsp_linker.o(.rodata.gp_ddsc_FLASH_NSC)
-    __tagsym$$used.11                        0x00003300   Number         0  bsp_linker.o(.rodata.gp_ddsc_FLASH_START)
-    __tagsym$$used.24                        0x00003304   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_END)
-    __tagsym$$used.32                        0x00003308   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END)
-    __tagsym$$used.31                        0x0000330c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START)
-    __tagsym$$used.40                        0x00003310   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END)
-    __tagsym$$used.39                        0x00003314   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START)
-    __tagsym$$used.23                        0x00003318   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_START)
-    __tagsym$$used.26                        0x0000331c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_END)
-    __tagsym$$used.34                        0x00003320   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_END)
-    __tagsym$$used.33                        0x00003324   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_START)
-    __tagsym$$used.42                        0x00003328   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_END)
-    __tagsym$$used.41                        0x0000332c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_START)
-    __tagsym$$used.25                        0x00003330   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_START)
-    __tagsym$$used.20                        0x00003334   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_END)
-    __tagsym$$used.19                        0x00003338   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_START)
-    __tagsym$$used.18                        0x0000333c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_END)
-    __tagsym$$used.17                        0x00003340   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_START)
-    __tagsym$$used.22                        0x00003344   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_END)
-    __tagsym$$used.30                        0x00003348   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_END)
-    __tagsym$$used.29                        0x0000334c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_START)
-    __tagsym$$used.38                        0x00003350   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_END)
-    __tagsym$$used.37                        0x00003354   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_START)
-    __tagsym$$used.21                        0x00003358   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_START)
-    __tagsym$$used.28                        0x0000335c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_END)
-    __tagsym$$used.36                        0x00003360   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_END)
-    __tagsym$$used.35                        0x00003364   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_START)
-    __tagsym$$used.27                        0x00003368   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_START)
-    __tagsym$$used.8                         0x0000336c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_END)
-    __tagsym$$used.7                         0x00003370   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_START)
-    __tagsym$$used.6                         0x00003374   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_END)
-    __tagsym$$used.5                         0x00003378   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_START)
-    __tagsym$$used.4                         0x0000337c   Number         0  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_END)
-    __tagsym$$used.3                         0x00003380   Number         0  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_START)
-    __tagsym$$used.15                        0x00003384   Number         0  bsp_linker.o(.rodata.gp_ddsc_RAM_END)
-    __tagsym$$used.16                        0x00003388   Number         0  bsp_linker.o(.rodata.gp_ddsc_RAM_NSC)
-    __tagsym$$used.14                        0x0000338c   Number         0  bsp_linker.o(.rodata.gp_ddsc_RAM_START)
-    nocache_list                             0x00003390   Data          16  bsp_linker.o(.rodata.nocache_list)
-    [Anonymous Symbol]                       0x00003390   Section        0  bsp_linker.o(.rodata.nocache_list)
-    .L.str.7                                 0x000033a0   Data          23  hal_entry_1.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x000033a0   Section        0  hal_entry_1.o(.rodata.str1.1)
-    .L.str.17                                0x000033b7   Data          37  hal_entry_1.o(.rodata.str1.1)
-    .L.str.16                                0x000033dc   Data          43  hal_entry_1.o(.rodata.str1.1)
-    .L.str.26                                0x00003407   Data          32  hal_entry_1.o(.rodata.str1.1)
-    .L.str.27                                0x00003427   Data          31  hal_entry_1.o(.rodata.str1.1)
-    .L.str.14                                0x00003446   Data          36  hal_entry_1.o(.rodata.str1.1)
-    .L.str.4                                 0x0000346a   Data          41  hal_entry_1.o(.rodata.str1.1)
-    .L.str.21                                0x00003493   Data          38  hal_entry_1.o(.rodata.str1.1)
-    .L.str.24                                0x000034b9   Data          38  hal_entry_1.o(.rodata.str1.1)
-    .L.str.18                                0x000034df   Data          37  hal_entry_1.o(.rodata.str1.1)
-    .L.str.22                                0x00003504   Data          37  hal_entry_1.o(.rodata.str1.1)
-    .L.str.29                                0x00003529   Data          31  hal_entry_1.o(.rodata.str1.1)
-    .L.str.12                                0x00003548   Data          26  hal_entry_1.o(.rodata.str1.1)
-    .L.str.28                                0x00003562   Data          24  hal_entry_1.o(.rodata.str1.1)
-    .L.str.5                                 0x0000357a   Data          15  hal_entry_1.o(.rodata.str1.1)
-    .L.str.6                                 0x00003589   Data          15  hal_entry_1.o(.rodata.str1.1)
-    .L.str.23                                0x00003598   Data          21  hal_entry_1.o(.rodata.str1.1)
-    .L.str.19                                0x000035ad   Data          20  hal_entry_1.o(.rodata.str1.1)
-    .L.str.25                                0x000035c1   Data          21  hal_entry_1.o(.rodata.str1.1)
-    .L.str.20                                0x000035d6   Data          20  hal_entry_1.o(.rodata.str1.1)
-    .L.str.13                                0x000035ea   Data           6  hal_entry_1.o(.rodata.str1.1)
-    .L.str.10                                0x000035f0   Data          11  hal_entry_1.o(.rodata.str1.1)
-    .L.str.15                                0x000035fb   Data           6  hal_entry_1.o(.rodata.str1.1)
-    .L.str.9                                 0x00003601   Data           9  hal_entry_1.o(.rodata.str1.1)
-    zero_list                                0x0000360c   Data          48  bsp_linker.o(.rodata.zero_list)
-    [Anonymous Symbol]                       0x0000360c   Section        0  bsp_linker.o(.rodata.zero_list)
-    __tagsym$$used.0                         0x0000363c   Number         0  bsp_common.o(.version)
-    g_fsp_version                            0x0000363c   Data           4  bsp_common.o(.version)
-    [Anonymous Symbol]                       0x0000363c   Section        0  bsp_common.o(.version)
-    __tagsym$$used.1                         0x00003640   Number         0  bsp_common.o(.version)
-    g_fsp_version_string                     0x00003640   Data           6  bsp_common.o(.version)
-    [Anonymous Symbol]                       0x00003640   Section        0  bsp_common.o(.version)
-    __tagsym$$used.2                         0x00003646   Number         0  bsp_common.o(.version)
-    g_fsp_version_build_string               0x00003646   Data          68  bsp_common.o(.version)
-    [Anonymous Symbol]                       0x00003646   Section        0  bsp_common.o(.version)
+    .text                                    0x00000134   Section        0  strstr.o(.text)
+    .text                                    0x00000158   Section        0  memcmp.o(.text)
+    .text                                    0x00000174   Section        0  __0sscanf.o(.text)
+    _fp_value                                0x000001ad   Thumb Code   296  scanf_fp.o(.text)
+    .text                                    0x000001ac   Section        0  scanf_fp.o(.text)
+    .text                                    0x0000050c   Section        0  f2d.o(.text)
+    .text                                    0x00000532   Section        0  uidiv.o(.text)
+    .text                                    0x0000055e   Section        0  uldiv.o(.text)
+    _scanf_char_input                        0x000005c1   Thumb Code    12  scanf_char.o(.text)
+    .text                                    0x000005c0   Section        0  scanf_char.o(.text)
+    .text                                    0x000005e8   Section        0  _sgetc.o(.text)
+    .text                                    0x00000628   Section        0  iusefp.o(.text)
+    .text                                    0x00000628   Section        0  dadd.o(.text)
+    .text                                    0x00000776   Section        0  dmul.o(.text)
+    .text                                    0x0000085a   Section        0  ddiv.o(.text)
+    .text                                    0x00000938   Section        0  dfltul.o(.text)
+    .text                                    0x00000950   Section        0  dfixul.o(.text)
+    .text                                    0x00000980   Section       48  cdrcmple.o(.text)
+    .text                                    0x000009b0   Section        0  d2f.o(.text)
+    .text                                    0x000009e8   Section        0  llshl.o(.text)
+    .text                                    0x00000a06   Section        0  llushr.o(.text)
+    .text                                    0x00000a26   Section        0  llsshr.o(.text)
+    .text                                    0x00000a4a   Section        0  isspace_c.o(.text)
+    .text                                    0x00000a54   Section        0  _scanf.o(.text)
+    .text                                    0x00000d80   Section        0  fepilogue.o(.text)
+    .text                                    0x00000dee   Section        0  depilogue.o(.text)
+    .text                                    0x00000ea8   Section        0  ctype_c.o(.text)
+    [Anonymous Symbol]                       0x00000ed0   Section        0  driver_bh1750_1.o(.text.Bh1750_Init)
+    [Anonymous Symbol]                       0x00000f18   Section        0  driver_bh1750_1.o(.text.Bh1750_ReadLux)
+    [Anonymous Symbol]                       0x00000fcc   Section        0  startup.o(.text.Default_Handler)
+    [Anonymous Symbol]                       0x00000fd0   Section        0  driver_dht22_1.o(.text.Dht22_Read)
+    [Anonymous Symbol]                       0x0000117c   Section        0  farm_analysis.o(.text.Farm_Data_Analysis)
+    [Anonymous Symbol]                       0x0000149c   Section        0  farm_analysis.o(.text.Farm_Data_Init)
+    [Anonymous Symbol]                       0x000014b8   Section        0  hal_entry_1.o(.text.Hmi_SendCmd)
+    [Anonymous Symbol]                       0x000014f0   Section        0  bsp_group_irq.o(.text.NMI_Handler)
+    [Anonymous Symbol]                       0x00001534   Section        0  bsp_clocks.o(.text.R_BSP_Init_RTC)
+    [Anonymous Symbol]                       0x000015ae   Section        0  bsp_register_protection.o(.text.R_BSP_RegisterProtectDisable)
+    [Anonymous Symbol]                       0x000015fc   Section        0  bsp_register_protection.o(.text.R_BSP_RegisterProtectEnable)
+    [Anonymous Symbol]                       0x0000164e   Section        0  bsp_delay.o(.text.R_BSP_SoftwareDelay)
+    [Anonymous Symbol]                       0x000016d2   Section        0  bsp_clocks.o(.text.R_BSP_SubClockStabilizeWaitAfterReset)
+    [Anonymous Symbol]                       0x000016d4   Section        0  hal_warmstart_1.o(.text.R_BSP_WarmStart)
+    [Anonymous Symbol]                       0x000016ee   Section        0  r_ioport.o(.text.R_IOPORT_Open)
+    [Anonymous Symbol]                       0x00001704   Section        0  r_ioport.o(.text.R_IOPORT_PinCfg)
+    [Anonymous Symbol]                       0x000017b6   Section        0  r_ioport.o(.text.R_IOPORT_PinRead)
+    [Anonymous Symbol]                       0x000017d8   Section        0  r_ioport.o(.text.R_IOPORT_PinWrite)
+    [Anonymous Symbol]                       0x00001800   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Abort)
+    [Anonymous Symbol]                       0x00001828   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_CallbackSet)
+    [Anonymous Symbol]                       0x00001836   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Close)
+    [Anonymous Symbol]                       0x0000188c   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Open)
+    [Anonymous Symbol]                       0x000019e6   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Read)
+    [Anonymous Symbol]                       0x000019f6   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_SlaveAddressSet)
+    [Anonymous Symbol]                       0x00001a00   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_StatusGet)
+    [Anonymous Symbol]                       0x00001a18   Section        0  r_sci_i2c.o(.text.R_SCI_I2C_Write)
+    [Anonymous Symbol]                       0x00001a28   Section        0  r_sci_uart.o(.text.R_SCI_UART_Open)
+    [Anonymous Symbol]                       0x00001d64   Section        0  r_sci_uart.o(.text.R_SCI_UART_Read)
+    [Anonymous Symbol]                       0x00001d6e   Section        0  r_sci_uart.o(.text.R_SCI_UART_Write)
+    [Anonymous Symbol]                       0x00001dbc   Section        0  startup.o(.text.Reset_Handler)
+    [Anonymous Symbol]                       0x00001dc6   Section        0  bsp_clocks.o(.text.SystemCoreClockUpdate)
+    [Anonymous Symbol]                       0x00001df4   Section        0  system.o(.text.SystemInit)
+    SystemRuntimeInit                        0x00001e99   Thumb Code    90  system.o(.text.SystemRuntimeInit)
+    [Anonymous Symbol]                       0x00001e98   Section        0  system.o(.text.SystemRuntimeInit)
+    [Anonymous Symbol]                       0x00001ef2   Section        0  driver_uart_1.o(.text.Uart_Init)
+    [Anonymous Symbol]                       0x00001efc   Section        0  driver_uart_1.o(.text.Uart_Printf)
+    [Anonymous Symbol]                       0x00001f4c   Section        0  driver_uart_1.o(.text.Uart_Send)
+    [Anonymous Symbol]                       0x00001f6c   Section        0  driver_uart_1.o(.text.Uart_StartRx)
+    bh1750_write_cmd                         0x00001f79   Thumb Code   112  driver_bh1750_1.o(.text.bh1750_write_cmd)
+    [Anonymous Symbol]                       0x00001f78   Section        0  driver_bh1750_1.o(.text.bh1750_write_cmd)
+    [Anonymous Symbol]                       0x00001fe8   Section        0  bsp_clocks.o(.text.bsp_clock_init)
+    [Anonymous Symbol]                       0x00002124   Section        0  bsp_common.o(.text.bsp_init_internal)
+    [Anonymous Symbol]                       0x00002128   Section        0  bsp_irq.o(.text.bsp_irq_cfg)
+    sw_delay_loop                            0x000021b2   Number         0  bsp_delay.o(.text.bsp_prv_software_delay_loop)
+    [Anonymous Symbol]                       0x000021b2   Section        0  bsp_delay.o(.text.bsp_prv_software_delay_loop)
+    bsp_vbatt_init                           0x000021bd   Thumb Code   204  r_ioport.o(.text.bsp_vbatt_init)
+    [Anonymous Symbol]                       0x000021bc   Section        0  r_ioport.o(.text.bsp_vbatt_init)
+    g_vbatt_pins_input                       0x00002288   Number         0  r_ioport.o(.text.bsp_vbatt_init)
+    [Anonymous Symbol]                       0x00002294   Section        0  hal_entry_1.o(.text.hal_entry)
+    [Anonymous Symbol]                       0x00002c04   Section        0  main.o(.text.main)
+    r_ioport_pins_config                     0x00002c11   Thumb Code   192  r_ioport.o(.text.r_ioport_pins_config)
+    [Anonymous Symbol]                       0x00002c10   Section        0  r_ioport.o(.text.r_ioport_pins_config)
+    r_sci_uart_call_callback                 0x00002cd1   Thumb Code    64  r_sci_uart.o(.text.r_sci_uart_call_callback)
+    [Anonymous Symbol]                       0x00002cd0   Section        0  r_sci_uart.o(.text.r_sci_uart_call_callback)
+    [Anonymous Symbol]                       0x00002d10   Section        0  hal_entry_1.o(.text.sci_i2c_master_callback)
+    sci_i2c_read_write                       0x00002d43   Thumb Code   152  r_sci_i2c.o(.text.sci_i2c_read_write)
+    [Anonymous Symbol]                       0x00002d42   Section        0  r_sci_i2c.o(.text.sci_i2c_read_write)
+    [Anonymous Symbol]                       0x00002dda   Section        0  r_sci_i2c.o(.text.sci_i2c_tei_isr)
+    [Anonymous Symbol]                       0x00002ef6   Section        0  r_sci_i2c.o(.text.sci_i2c_txi_isr)
+    [Anonymous Symbol]                       0x0000301e   Section        0  r_sci_uart.o(.text.sci_uart_eri_isr)
+    [Anonymous Symbol]                       0x00003088   Section        0  r_sci_uart.o(.text.sci_uart_rxi_isr)
+    [Anonymous Symbol]                       0x00003110   Section        0  r_sci_uart.o(.text.sci_uart_tei_isr)
+    [Anonymous Symbol]                       0x0000315a   Section        0  r_sci_uart.o(.text.sci_uart_txi_isr)
+    [Anonymous Symbol]                       0x000031e2   Section        0  hal_entry_1.o(.text.uart2_callback)
+    [Anonymous Symbol]                       0x000031f8   Section        0  hal_entry_1.o(.text.uart4_callback)
+    [Anonymous Symbol]                       0x00003220   Section        0  hal_entry_1.o(.text.uart7_callback)
+    [Anonymous Symbol]                       0x00003236   Section        0  hal_entry_1.o(.text.uart8_callback)
+    [Anonymous Symbol]                       0x0000325e   Section        0  hal_entry_1.o(.text.uart9_callback)
+    i.__0snprintf                            0x00003288   Section        0  printfa.o(i.__0snprintf)
+    i.__0vsnprintf                           0x000032bc   Section        0  printfa.o(i.__0vsnprintf)
+    _fp_digits                               0x000032f1   Thumb Code   366  printfa.o(i._fp_digits)
+    i._fp_digits                             0x000032f0   Section        0  printfa.o(i._fp_digits)
+    i._is_digit                              0x00003474   Section        0  scanf_fp.o(i._is_digit)
+    _printf_core                             0x00003485   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_core                           0x00003484   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x00003b61   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x00003b60   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x00003b85   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x00003b84   Section        0  printfa.o(i._printf_pre_padding)
+    _snputc                                  0x00003bb3   Thumb Code    22  printfa.o(i._snputc)
+    i._snputc                                0x00003bb2   Section        0  printfa.o(i._snputc)
+    .constdata                               0x00003bc8   Section       64  ctype_c.o(.constdata)
+    Task_Face.reco_cmd                       0x00003c08   Data           8  hal_entry_1.o(.rodata.Task_Face.reco_cmd)
+    [Anonymous Symbol]                       0x00003c08   Section        0  hal_entry_1.o(.rodata.Task_Face.reco_cmd)
+    Task_HMI.enroll_cmd                      0x00003c10   Data           6  hal_entry_1.o(.rodata.Task_HMI.enroll_cmd)
+    [Anonymous Symbol]                       0x00003c10   Section        0  hal_entry_1.o(.rodata.Task_HMI.enroll_cmd)
+    Task_HMI.reset_cmd                       0x00003c16   Data           6  hal_entry_1.o(.rodata.Task_HMI.reset_cmd)
+    [Anonymous Symbol]                       0x00003c16   Section        0  hal_entry_1.o(.rodata.Task_HMI.reset_cmd)
+    copy_list                                0x00003c1c   Data         128  bsp_linker.o(.rodata.copy_list)
+    [Anonymous Symbol]                       0x00003c1c   Section        0  bsp_linker.o(.rodata.copy_list)
+    g_prcr_masks                             0x00003dfc   Data          10  bsp_register_protection.o(.rodata.g_prcr_masks)
+    [Anonymous Symbol]                       0x00003dfc   Section        0  bsp_register_protection.o(.rodata.g_prcr_masks)
+    __tagsym$$used.10                        0x00004038   Number         0  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_END)
+    __tagsym$$used.9                         0x0000403c   Number         0  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_START)
+    __tagsym$$used.12                        0x00004040   Number         0  bsp_linker.o(.rodata.gp_ddsc_FLASH_END)
+    __tagsym$$used.13                        0x00004044   Number         0  bsp_linker.o(.rodata.gp_ddsc_FLASH_NSC)
+    __tagsym$$used.11                        0x00004048   Number         0  bsp_linker.o(.rodata.gp_ddsc_FLASH_START)
+    __tagsym$$used.24                        0x0000404c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_END)
+    __tagsym$$used.32                        0x00004050   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END)
+    __tagsym$$used.31                        0x00004054   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START)
+    __tagsym$$used.40                        0x00004058   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END)
+    __tagsym$$used.39                        0x0000405c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START)
+    __tagsym$$used.23                        0x00004060   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_START)
+    __tagsym$$used.26                        0x00004064   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_END)
+    __tagsym$$used.34                        0x00004068   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_END)
+    __tagsym$$used.33                        0x0000406c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_START)
+    __tagsym$$used.42                        0x00004070   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_END)
+    __tagsym$$used.41                        0x00004074   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_START)
+    __tagsym$$used.25                        0x00004078   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_START)
+    __tagsym$$used.20                        0x0000407c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_END)
+    __tagsym$$used.19                        0x00004080   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_START)
+    __tagsym$$used.18                        0x00004084   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_END)
+    __tagsym$$used.17                        0x00004088   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_START)
+    __tagsym$$used.22                        0x0000408c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_END)
+    __tagsym$$used.30                        0x00004090   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_END)
+    __tagsym$$used.29                        0x00004094   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_START)
+    __tagsym$$used.38                        0x00004098   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_END)
+    __tagsym$$used.37                        0x0000409c   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_START)
+    __tagsym$$used.21                        0x000040a0   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_START)
+    __tagsym$$used.28                        0x000040a4   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_END)
+    __tagsym$$used.36                        0x000040a8   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_END)
+    __tagsym$$used.35                        0x000040ac   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_START)
+    __tagsym$$used.27                        0x000040b0   Number         0  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_START)
+    __tagsym$$used.8                         0x000040b4   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_END)
+    __tagsym$$used.7                         0x000040b8   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_START)
+    __tagsym$$used.6                         0x000040bc   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_END)
+    __tagsym$$used.5                         0x000040c0   Number         0  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_START)
+    __tagsym$$used.4                         0x000040c4   Number         0  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_END)
+    __tagsym$$used.3                         0x000040c8   Number         0  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_START)
+    __tagsym$$used.15                        0x000040cc   Number         0  bsp_linker.o(.rodata.gp_ddsc_RAM_END)
+    __tagsym$$used.16                        0x000040d0   Number         0  bsp_linker.o(.rodata.gp_ddsc_RAM_NSC)
+    __tagsym$$used.14                        0x000040d4   Number         0  bsp_linker.o(.rodata.gp_ddsc_RAM_START)
+    nocache_list                             0x000040d8   Data          16  bsp_linker.o(.rodata.nocache_list)
+    [Anonymous Symbol]                       0x000040d8   Section        0  bsp_linker.o(.rodata.nocache_list)
+    .L.str.11                                0x000040e8   Data          52  farm_analysis.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x000040e8   Section        0  farm_analysis.o(.rodata.str1.1)
+    .L.str.9                                 0x0000411c   Data          50  farm_analysis.o(.rodata.str1.1)
+    .L.str.4                                 0x0000414e   Data          46  farm_analysis.o(.rodata.str1.1)
+    .L.str.15                                0x0000417c   Data          38  farm_analysis.o(.rodata.str1.1)
+    .L.str.14                                0x000041a2   Data          28  farm_analysis.o(.rodata.str1.1)
+    .L.str.13                                0x000041be   Data          56  farm_analysis.o(.rodata.str1.1)
+    .L.str.16                                0x000041f6   Data          41  farm_analysis.o(.rodata.str1.1)
+    .L.str.10                                0x0000421f   Data          10  farm_analysis.o(.rodata.str1.1)
+    .L.str.15                                0x00004229   Data          10  farm_analysis.o(.rodata.str1.1)
+    .L.str.5                                 0x00004229   Data          10  farm_analysis.o(.rodata.str1.1)
+    .L.str.1                                 0x00004233   Data          61  farm_analysis.o(.rodata.str1.1)
+    .L.str.8                                 0x00004270   Data          60  farm_analysis.o(.rodata.str1.1)
+    .L.str.6                                 0x000042ac   Data          58  farm_analysis.o(.rodata.str1.1)
+    .L.str.11                                0x000042e6   Data          33  hal_entry_1.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x000042e6   Section        0  hal_entry_1.o(.rodata.str1.1)
+    .L.str.14                                0x00004307   Data          34  hal_entry_1.o(.rodata.str1.1)
+    .L.str.12                                0x00004329   Data           9  hal_entry_1.o(.rodata.str1.1)
+    .L.str.25                                0x00004332   Data          12  hal_entry_1.o(.rodata.str1.1)
+    .L.str.22                                0x0000433e   Data          16  hal_entry_1.o(.rodata.str1.1)
+    .L.str.24                                0x0000434e   Data          16  hal_entry_1.o(.rodata.str1.1)
+    .L.str.18                                0x0000435e   Data          21  hal_entry_1.o(.rodata.str1.1)
+    .L.str.16                                0x00004373   Data          20  hal_entry_1.o(.rodata.str1.1)
+    .L.str.19                                0x00004387   Data          21  hal_entry_1.o(.rodata.str1.1)
+    .L.str.17                                0x0000439c   Data          20  hal_entry_1.o(.rodata.str1.1)
+    .L.str.20                                0x000043b0   Data           6  hal_entry_1.o(.rodata.str1.1)
+    .L.str.23                                0x000043b6   Data           6  hal_entry_1.o(.rodata.str1.1)
+    .L.str.21                                0x000043bc   Data           3  hal_entry_1.o(.rodata.str1.1)
+    .L.str.10                                0x000043bf   Data           7  hal_entry_1.o(.rodata.str1.1)
+    .L.str.13                                0x000043c6   Data           8  hal_entry_1.o(.rodata.str1.1)
+    zero_list                                0x000043d0   Data          48  bsp_linker.o(.rodata.zero_list)
+    [Anonymous Symbol]                       0x000043d0   Section        0  bsp_linker.o(.rodata.zero_list)
+    __tagsym$$used.0                         0x00004400   Number         0  bsp_common.o(.version)
+    g_fsp_version                            0x00004400   Data           4  bsp_common.o(.version)
+    [Anonymous Symbol]                       0x00004400   Section        0  bsp_common.o(.version)
+    __tagsym$$used.1                         0x00004404   Number         0  bsp_common.o(.version)
+    g_fsp_version_string                     0x00004404   Data           6  bsp_common.o(.version)
+    [Anonymous Symbol]                       0x00004404   Section        0  bsp_common.o(.version)
+    __tagsym$$used.2                         0x0000440a   Number         0  bsp_common.o(.version)
+    g_fsp_version_build_string               0x0000440a   Data          68  bsp_common.o(.version)
+    [Anonymous Symbol]                       0x0000440a   Section        0  bsp_common.o(.version)
     __tagsym$$used.0                         0x0100a100   Number         0  bsp_linker.o(.option_setting_ofs0)
     g_bsp_cfg_option_setting_ofs0            0x0100a100   Data           4  bsp_linker.o(.option_setting_ofs0)
     [Anonymous Symbol]                       0x0100a100   Section        0  bsp_linker.o(.option_setting_ofs0)
@@ -1037,52 +1152,56 @@ Image Symbol Table
     __tagsym$$used.0                         0x20000460   Number         0  bsp_clocks.o(.bss.ram_noinit)
     g_clock_freq                             0x20000460   Data          28  bsp_clocks.o(.bss.ram_noinit)
     [Anonymous Symbol]                       0x20000460   Section        0  bsp_clocks.o(.bss.ram_noinit)
-    Task_CO2.add_rest_count                  0x20000480   Data           1  hal_entry_1.o(.bss.Task_CO2.add_rest_count)
-    [Anonymous Symbol]                       0x20000480   Section        0  hal_entry_1.o(.bss.Task_CO2.add_rest_count)
-    Task_CO2.add_send_count                  0x20000482   Data           2  hal_entry_1.o(.bss.Task_CO2.add_send_count)
-    [Anonymous Symbol]                       0x20000482   Section        0  hal_entry_1.o(.bss.Task_CO2.add_send_count)
-    Task_CO2.low_co2_count                   0x20000484   Data           2  hal_entry_1.o(.bss.Task_CO2.low_co2_count)
-    [Anonymous Symbol]                       0x20000484   Section        0  hal_entry_1.o(.bss.Task_CO2.low_co2_count)
-    Task_CO2.rx_frame                        0x20000486   Data          16  hal_entry_1.o(.bss.Task_CO2.rx_frame)
-    [Anonymous Symbol]                       0x20000486   Section        0  hal_entry_1.o(.bss.Task_CO2.rx_frame)
-    Task_CO2.rx_index                        0x20000496   Data           1  hal_entry_1.o(.bss.Task_CO2.rx_index)
-    [Anonymous Symbol]                       0x20000496   Section        0  hal_entry_1.o(.bss.Task_CO2.rx_index)
-    Task_DHT22.dht22_read_tick               0x20000498   Data           4  hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick)
-    [Anonymous Symbol]                       0x20000498   Section        0  hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick)
-    Task_Face.sci9_rx_frame                  0x2000049c   Data         256  hal_entry_1.o(.bss.Task_Face.sci9_rx_frame)
-    [Anonymous Symbol]                       0x2000049c   Section        0  hal_entry_1.o(.bss.Task_Face.sci9_rx_frame)
-    Task_Face.sci9_rx_idle_tick              0x2000059c   Data           4  hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick)
-    [Anonymous Symbol]                       0x2000059c   Section        0  hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick)
-    Task_Face.sci9_rx_idx                    0x200005a0   Data           2  hal_entry_1.o(.bss.Task_Face.sci9_rx_idx)
-    [Anonymous Symbol]                       0x200005a0   Section        0  hal_entry_1.o(.bss.Task_Face.sci9_rx_idx)
-    Task_HMI.hmi_rx_frame                    0x200005a2   Data          64  hal_entry_1.o(.bss.Task_HMI.hmi_rx_frame)
-    [Anonymous Symbol]                       0x200005a2   Section        0  hal_entry_1.o(.bss.Task_HMI.hmi_rx_frame)
-    Task_HMI.hmi_rx_idle_tick                0x200005e4   Data           4  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick)
-    [Anonymous Symbol]                       0x200005e4   Section        0  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick)
-    Task_HMI.hmi_rx_idx                      0x200005e8   Data           2  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx)
-    [Anonymous Symbol]                       0x200005e8   Section        0  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx)
-    Task_Light.light_tick                    0x200005ec   Data           4  hal_entry_1.o(.bss.Task_Light.light_tick)
-    [Anonymous Symbol]                       0x200005ec   Section        0  hal_entry_1.o(.bss.Task_Light.light_tick)
-    Task_Uart8.rx_frame                      0x200005f0   Data         512  hal_entry_1.o(.bss.Task_Uart8.rx_frame)
-    [Anonymous Symbol]                       0x200005f0   Section        0  hal_entry_1.o(.bss.Task_Uart8.rx_frame)
-    Task_Uart8.rx_idle_tick                  0x200007f0   Data           4  hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick)
-    [Anonymous Symbol]                       0x200007f0   Section        0  hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick)
-    Task_Uart8.rx_idx                        0x200007f4   Data           2  hal_entry_1.o(.bss.Task_Uart8.rx_idx)
-    [Anonymous Symbol]                       0x200007f4   Section        0  hal_entry_1.o(.bss.Task_Uart8.rx_idx)
-    Uart_Printf.buffer                       0x200007f6   Data         256  driver_uart_1.o(.bss.Uart_Printf.buffer)
-    [Anonymous Symbol]                       0x200007f6   Section        0  driver_uart_1.o(.bss.Uart_Printf.buffer)
-    g_bh1750                                 0x200008f8   Data           8  hal_entry_1.o(.bss.g_bh1750)
-    [Anonymous Symbol]                       0x200008f8   Section        0  hal_entry_1.o(.bss.g_bh1750)
-    g_face_delay_tick                        0x20000940   Data           4  hal_entry_1.o(.bss.g_face_delay_tick)
-    [Anonymous Symbol]                       0x20000940   Section        0  hal_entry_1.o(.bss.g_face_delay_tick)
-    g_face_state                             0x20000944   Data           1  hal_entry_1.o(.bss.g_face_state)
-    [Anonymous Symbol]                       0x20000944   Section        0  hal_entry_1.o(.bss.g_face_state)
+    Task_Analysis.analysis_tick              0x20000480   Data           4  hal_entry_1.o(.bss.Task_Analysis.analysis_tick)
+    [Anonymous Symbol]                       0x20000480   Section        0  hal_entry_1.o(.bss.Task_Analysis.analysis_tick)
+    Task_CO2.add_rest_count                  0x20000484   Data           1  hal_entry_1.o(.bss.Task_CO2.add_rest_count)
+    [Anonymous Symbol]                       0x20000484   Section        0  hal_entry_1.o(.bss.Task_CO2.add_rest_count)
+    Task_CO2.add_send_count                  0x20000486   Data           2  hal_entry_1.o(.bss.Task_CO2.add_send_count)
+    [Anonymous Symbol]                       0x20000486   Section        0  hal_entry_1.o(.bss.Task_CO2.add_send_count)
+    Task_CO2.low_co2_count                   0x20000488   Data           2  hal_entry_1.o(.bss.Task_CO2.low_co2_count)
+    [Anonymous Symbol]                       0x20000488   Section        0  hal_entry_1.o(.bss.Task_CO2.low_co2_count)
+    Task_CO2.rx_frame                        0x2000048a   Data          64  hal_entry_1.o(.bss.Task_CO2.rx_frame)
+    [Anonymous Symbol]                       0x2000048a   Section        0  hal_entry_1.o(.bss.Task_CO2.rx_frame)
+    Task_CO2.rx_idle_tick                    0x200004cc   Data           4  hal_entry_1.o(.bss.Task_CO2.rx_idle_tick)
+    [Anonymous Symbol]                       0x200004cc   Section        0  hal_entry_1.o(.bss.Task_CO2.rx_idle_tick)
+    Task_CO2.rx_idx                          0x200004d0   Data           1  hal_entry_1.o(.bss.Task_CO2.rx_idx)
+    [Anonymous Symbol]                       0x200004d0   Section        0  hal_entry_1.o(.bss.Task_CO2.rx_idx)
+    Task_DHT22.dht22_read_tick               0x200004d4   Data           4  hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick)
+    [Anonymous Symbol]                       0x200004d4   Section        0  hal_entry_1.o(.bss.Task_DHT22.dht22_read_tick)
+    Task_Face.sci9_rx_frame                  0x200004d8   Data         256  hal_entry_1.o(.bss.Task_Face.sci9_rx_frame)
+    [Anonymous Symbol]                       0x200004d8   Section        0  hal_entry_1.o(.bss.Task_Face.sci9_rx_frame)
+    Task_Face.sci9_rx_idle_tick              0x200005d8   Data           4  hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick)
+    [Anonymous Symbol]                       0x200005d8   Section        0  hal_entry_1.o(.bss.Task_Face.sci9_rx_idle_tick)
+    Task_Face.sci9_rx_idx                    0x200005dc   Data           2  hal_entry_1.o(.bss.Task_Face.sci9_rx_idx)
+    [Anonymous Symbol]                       0x200005dc   Section        0  hal_entry_1.o(.bss.Task_Face.sci9_rx_idx)
+    Task_HMI.hmi_rx_frame                    0x200005de   Data          64  hal_entry_1.o(.bss.Task_HMI.hmi_rx_frame)
+    [Anonymous Symbol]                       0x200005de   Section        0  hal_entry_1.o(.bss.Task_HMI.hmi_rx_frame)
+    Task_HMI.hmi_rx_idle_tick                0x20000620   Data           4  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick)
+    [Anonymous Symbol]                       0x20000620   Section        0  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idle_tick)
+    Task_HMI.hmi_rx_idx                      0x20000624   Data           2  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx)
+    [Anonymous Symbol]                       0x20000624   Section        0  hal_entry_1.o(.bss.Task_HMI.hmi_rx_idx)
+    Task_Light.light_tick                    0x20000628   Data           4  hal_entry_1.o(.bss.Task_Light.light_tick)
+    [Anonymous Symbol]                       0x20000628   Section        0  hal_entry_1.o(.bss.Task_Light.light_tick)
+    Task_Uart8.rx_frame                      0x2000062c   Data         512  hal_entry_1.o(.bss.Task_Uart8.rx_frame)
+    [Anonymous Symbol]                       0x2000062c   Section        0  hal_entry_1.o(.bss.Task_Uart8.rx_frame)
+    Task_Uart8.rx_idle_tick                  0x2000082c   Data           4  hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick)
+    [Anonymous Symbol]                       0x2000082c   Section        0  hal_entry_1.o(.bss.Task_Uart8.rx_idle_tick)
+    Task_Uart8.rx_idx                        0x20000830   Data           2  hal_entry_1.o(.bss.Task_Uart8.rx_idx)
+    [Anonymous Symbol]                       0x20000830   Section        0  hal_entry_1.o(.bss.Task_Uart8.rx_idx)
+    Uart_Printf.buffer                       0x20000832   Data         256  driver_uart_1.o(.bss.Uart_Printf.buffer)
+    [Anonymous Symbol]                       0x20000832   Section        0  driver_uart_1.o(.bss.Uart_Printf.buffer)
+    g_bh1750                                 0x20000934   Data           8  hal_entry_1.o(.bss.g_bh1750)
+    [Anonymous Symbol]                       0x20000934   Section        0  hal_entry_1.o(.bss.g_bh1750)
+    g_face_delay_tick                        0x2000097c   Data           4  hal_entry_1.o(.bss.g_face_delay_tick)
+    [Anonymous Symbol]                       0x2000097c   Section        0  hal_entry_1.o(.bss.g_face_delay_tick)
+    g_face_state                             0x20000980   Data           1  hal_entry_1.o(.bss.g_face_state)
+    [Anonymous Symbol]                       0x20000980   Section        0  hal_entry_1.o(.bss.g_face_state)
 
     Global Symbols
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$8M$VFPi5$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$WCHAR32$ENUMINT$~SHL$OSPACE$ROPI$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$8M$VFPi5$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$WCHAR32$ENUMINT$~SHL$OTIME$ROPI$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_FLASH_START$$Base          0x00000000   Number         0  anon$$obj.o ABSOLUTE
     __Vectors                                0x00000000   Data          64  startup.o(.fixed_vectors)
     _printf_a                                0x00000000   Number         0  printfstubs.o ABSOLUTE
@@ -1126,6 +1245,9 @@ Image Symbol Table
     _printf_wctomb                           0x00000000   Number         0  printfstubs.o ABSOLUTE
     _printf_widthprec                        0x00000000   Number         0  printfstubs.o ABSOLUTE
     _printf_x                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _scanf_int                                - Undefined Weak Reference
+    _scanf_longlong                           - Undefined Weak Reference
+    _scanf_string                             - Undefined Weak Reference
     g_vector_table                           0x00000040   Data          88  vector_data.o(.application_vectors)
     Load$$__ospi0_cs0_from_flash$$Base       0x00000098   Number         0  anon$$obj.o ABSOLUTE
     Load$$__ram_from_flash$$Base             0x00000098   Number         0  anon$$obj.o ABSOLUTE
@@ -1139,158 +1261,177 @@ Image Symbol Table
     __aeabi_memclr4                          0x0000011f   Thumb Code     0  memseta.o(.text)
     __aeabi_memclr8                          0x0000011f   Thumb Code     0  memseta.o(.text)
     _memset$wrapper                          0x00000123   Thumb Code    18  memseta.o(.text)
-    memcmp                                   0x00000135   Thumb Code    26  memcmp.o(.text)
-    __aeabi_f2d                              0x0000014f   Thumb Code    38  f2d.o(.text)
-    __aeabi_uidiv                            0x00000175   Thumb Code     0  uidiv.o(.text)
-    __aeabi_uidivmod                         0x00000175   Thumb Code    44  uidiv.o(.text)
-    __aeabi_uldivmod                         0x000001a1   Thumb Code    98  uldiv.o(.text)
-    __I$use$fp                               0x00000203   Thumb Code     0  iusefp.o(.text)
-    __aeabi_dadd                             0x00000203   Thumb Code   322  dadd.o(.text)
-    __aeabi_dsub                             0x00000345   Thumb Code     6  dadd.o(.text)
-    __aeabi_drsub                            0x0000034b   Thumb Code     6  dadd.o(.text)
-    __aeabi_dmul                             0x00000351   Thumb Code   228  dmul.o(.text)
-    __aeabi_ddiv                             0x00000435   Thumb Code   222  ddiv.o(.text)
-    __aeabi_d2ulz                            0x00000513   Thumb Code    48  dfixul.o(.text)
-    __aeabi_cdrcmple                         0x00000545   Thumb Code    48  cdrcmple.o(.text)
-    __aeabi_llsl                             0x00000575   Thumb Code    30  llshl.o(.text)
-    _ll_shift_l                              0x00000575   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x00000593   Thumb Code    32  llushr.o(.text)
-    _ll_ushift_r                             0x00000593   Thumb Code     0  llushr.o(.text)
-    __aeabi_lasr                             0x000005b3   Thumb Code    36  llsshr.o(.text)
-    _ll_sshift_r                             0x000005b3   Thumb Code     0  llsshr.o(.text)
-    _double_round                            0x000005d7   Thumb Code    30  depilogue.o(.text)
-    _double_epilogue                         0x000005f5   Thumb Code   156  depilogue.o(.text)
-    Bh1750_Init                              0x00000691   Thumb Code    70  driver_bh1750_1.o(.text.Bh1750_Init)
-    Bh1750_ReadLux                           0x000006d9   Thumb Code   176  driver_bh1750_1.o(.text.Bh1750_ReadLux)
-    BusFault_Handler                         0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    DebugMon_Handler                         0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    Default_Handler                          0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    HardFault_Handler                        0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    MemManage_Handler                        0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    PendSV_Handler                           0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    SVC_Handler                              0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    SecureFault_Handler                      0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    SysTick_Handler                          0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    UsageFault_Handler                       0x0000078d   Thumb Code     4  startup.o(.text.Default_Handler)
-    Dht22_Read                               0x00000791   Thumb Code   428  driver_dht22_1.o(.text.Dht22_Read)
-    NMI_Handler                              0x00000975   Thumb Code    68  bsp_group_irq.o(.text.NMI_Handler)
-    R_BSP_Init_RTC                           0x000009b9   Thumb Code   122  bsp_clocks.o(.text.R_BSP_Init_RTC)
-    R_BSP_RegisterProtectDisable             0x00000a33   Thumb Code    78  bsp_register_protection.o(.text.R_BSP_RegisterProtectDisable)
-    R_BSP_RegisterProtectEnable              0x00000a81   Thumb Code    82  bsp_register_protection.o(.text.R_BSP_RegisterProtectEnable)
-    R_BSP_SoftwareDelay                      0x00000ad3   Thumb Code   132  bsp_delay.o(.text.R_BSP_SoftwareDelay)
-    R_BSP_SubClockStabilizeWaitAfterReset    0x00000b57   Thumb Code     2  bsp_clocks.o(.text.R_BSP_SubClockStabilizeWaitAfterReset)
-    R_BSP_WarmStart                          0x00000b59   Thumb Code    26  hal_warmstart_1.o(.text.R_BSP_WarmStart)
-    R_IOPORT_Open                            0x00000b73   Thumb Code    22  r_ioport.o(.text.R_IOPORT_Open)
-    R_IOPORT_PinCfg                          0x00000b89   Thumb Code   178  r_ioport.o(.text.R_IOPORT_PinCfg)
-    R_IOPORT_PinRead                         0x00000c3b   Thumb Code    34  r_ioport.o(.text.R_IOPORT_PinRead)
-    R_IOPORT_PinWrite                        0x00000c5d   Thumb Code    40  r_ioport.o(.text.R_IOPORT_PinWrite)
-    R_SCI_I2C_Abort                          0x00000c85   Thumb Code    40  r_sci_i2c.o(.text.R_SCI_I2C_Abort)
-    R_SCI_I2C_CallbackSet                    0x00000cad   Thumb Code    14  r_sci_i2c.o(.text.R_SCI_I2C_CallbackSet)
-    R_SCI_I2C_Close                          0x00000cbb   Thumb Code    86  r_sci_i2c.o(.text.R_SCI_I2C_Close)
-    R_SCI_I2C_Open                           0x00000d11   Thumb Code   346  r_sci_i2c.o(.text.R_SCI_I2C_Open)
-    R_SCI_I2C_Read                           0x00000e6b   Thumb Code    16  r_sci_i2c.o(.text.R_SCI_I2C_Read)
-    R_SCI_I2C_SlaveAddressSet                0x00000e7b   Thumb Code    10  r_sci_i2c.o(.text.R_SCI_I2C_SlaveAddressSet)
-    R_SCI_I2C_StatusGet                      0x00000e85   Thumb Code    24  r_sci_i2c.o(.text.R_SCI_I2C_StatusGet)
-    R_SCI_I2C_Write                          0x00000e9d   Thumb Code    16  r_sci_i2c.o(.text.R_SCI_I2C_Write)
-    R_SCI_UART_Open                          0x00000ead   Thumb Code   828  r_sci_uart.o(.text.R_SCI_UART_Open)
-    R_SCI_UART_Read                          0x000011e9   Thumb Code    10  r_sci_uart.o(.text.R_SCI_UART_Read)
-    R_SCI_UART_Write                         0x000011f3   Thumb Code    76  r_sci_uart.o(.text.R_SCI_UART_Write)
-    Reset_Handler                            0x00001241   Thumb Code    10  startup.o(.text.Reset_Handler)
-    SystemCoreClockUpdate                    0x0000124b   Thumb Code    44  bsp_clocks.o(.text.SystemCoreClockUpdate)
-    SystemInit                               0x00001279   Thumb Code   162  system.o(.text.SystemInit)
-    Uart_Init                                0x00001377   Thumb Code     8  driver_uart_1.o(.text.Uart_Init)
-    Uart_Printf                              0x00001381   Thumb Code    80  driver_uart_1.o(.text.Uart_Printf)
-    Uart_Send                                0x000013d1   Thumb Code    32  driver_uart_1.o(.text.Uart_Send)
-    Uart_StartRx                             0x000013f1   Thumb Code    12  driver_uart_1.o(.text.Uart_StartRx)
-    bsp_clock_init                           0x0000146d   Thumb Code   316  bsp_clocks.o(.text.bsp_clock_init)
-    bsp_init                                 0x000015a9   Thumb Code     2  bsp_common.o(.text.bsp_init_internal)
-    bsp_init_internal                        0x000015a9   Thumb Code     2  bsp_common.o(.text.bsp_init_internal)
-    bsp_irq_cfg                              0x000015ad   Thumb Code   138  bsp_irq.o(.text.bsp_irq_cfg)
-    bsp_prv_software_delay_loop              0x00001637   Thumb Code     8  bsp_delay.o(.text.bsp_prv_software_delay_loop)
-    hal_entry                                0x00001719   Thumb Code  1892  hal_entry_1.o(.text.hal_entry)
-    main                                     0x00001f0d   Thumb Code    10  main.o(.text.main)
-    sci_i2c_master_callback                  0x00002019   Thumb Code    50  hal_entry_1.o(.text.sci_i2c_master_callback)
-    sci_i2c_tei_isr                          0x000020e3   Thumb Code   284  r_sci_i2c.o(.text.sci_i2c_tei_isr)
-    sci_i2c_txi_isr                          0x000021ff   Thumb Code   296  r_sci_i2c.o(.text.sci_i2c_txi_isr)
-    sci_uart_eri_isr                         0x00002327   Thumb Code   106  r_sci_uart.o(.text.sci_uart_eri_isr)
-    sci_uart_rxi_isr                         0x00002391   Thumb Code   136  r_sci_uart.o(.text.sci_uart_rxi_isr)
-    sci_uart_tei_isr                         0x00002419   Thumb Code    74  r_sci_uart.o(.text.sci_uart_tei_isr)
-    sci_uart_txi_isr                         0x00002463   Thumb Code   136  r_sci_uart.o(.text.sci_uart_txi_isr)
-    uart2_callback                           0x000024eb   Thumb Code    22  hal_entry_1.o(.text.uart2_callback)
-    uart4_callback                           0x00002501   Thumb Code    40  hal_entry_1.o(.text.uart4_callback)
-    uart7_callback                           0x00002529   Thumb Code    22  hal_entry_1.o(.text.uart7_callback)
-    uart8_callback                           0x0000253f   Thumb Code    40  hal_entry_1.o(.text.uart8_callback)
-    uart9_callback                           0x00002567   Thumb Code    40  hal_entry_1.o(.text.uart9_callback)
-    __0snprintf                              0x00002591   Thumb Code    48  printfa.o(i.__0snprintf)
-    __1snprintf                              0x00002591   Thumb Code     0  printfa.o(i.__0snprintf)
-    __2snprintf                              0x00002591   Thumb Code     0  printfa.o(i.__0snprintf)
-    __c89snprintf                            0x00002591   Thumb Code     0  printfa.o(i.__0snprintf)
-    snprintf                                 0x00002591   Thumb Code     0  printfa.o(i.__0snprintf)
-    __0vsnprintf                             0x000025c5   Thumb Code    46  printfa.o(i.__0vsnprintf)
-    __1vsnprintf                             0x000025c5   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    __2vsnprintf                             0x000025c5   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    __c89vsnprintf                           0x000025c5   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    vsnprintf                                0x000025c5   Thumb Code     0  printfa.o(i.__0vsnprintf)
-    g_bsp_pin_cfg                            0x00002f54   Data          12  pin_data.o(.rodata.g_bsp_pin_cfg)
-    g_bsp_pin_cfg_data                       0x00002f60   Data         120  pin_data.o(.rodata.g_bsp_pin_cfg_data)
-    g_i2c5                                   0x00002fd8   Data          12  hal_data.o(.rodata.g_i2c5)
-    g_i2c5_cfg                               0x00002fe4   Data          56  hal_data.o(.rodata.g_i2c5_cfg)
-    g_i2c5_cfg_extend                        0x0000301c   Data           6  hal_data.o(.rodata.g_i2c5_cfg_extend)
-    g_i2c_master_on_sci                      0x00003024   Data          32  r_sci_i2c.o(.rodata.g_i2c_master_on_sci)
-    g_init_info                              0x00003044   Data          24  bsp_linker.o(.rodata.g_init_info)
-    g_interrupt_event_link_select            0x0000305c   Data          88  vector_data.o(.rodata.g_interrupt_event_link_select)
-    g_uart2_cfg                              0x000030c0   Data          68  hal_data.o(.rodata.g_uart2_cfg)
-    g_uart2_cfg_extend                       0x00003104   Data          44  hal_data.o(.rodata.g_uart2_cfg_extend)
-    g_uart4_cfg                              0x00003130   Data          68  hal_data.o(.rodata.g_uart4_cfg)
-    g_uart4_cfg_extend                       0x00003174   Data          44  hal_data.o(.rodata.g_uart4_cfg_extend)
-    g_uart7_cfg                              0x000031a0   Data          68  hal_data.o(.rodata.g_uart7_cfg)
-    g_uart7_cfg_extend                       0x000031e4   Data          44  hal_data.o(.rodata.g_uart7_cfg_extend)
-    g_uart8_cfg                              0x00003210   Data          68  hal_data.o(.rodata.g_uart8_cfg)
-    g_uart8_cfg_extend                       0x00003254   Data          44  hal_data.o(.rodata.g_uart8_cfg_extend)
-    g_uart9_cfg                              0x00003280   Data          68  hal_data.o(.rodata.g_uart9_cfg)
-    g_uart9_cfg_extend                       0x000032c4   Data          44  hal_data.o(.rodata.g_uart9_cfg_extend)
-    gp_ddsc_DATA_FLASH_END                   0x000032f0   Data           4  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_END)
-    gp_ddsc_DATA_FLASH_START                 0x000032f4   Data           4  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_START)
-    gp_ddsc_FLASH_END                        0x000032f8   Data           4  bsp_linker.o(.rodata.gp_ddsc_FLASH_END)
-    gp_ddsc_FLASH_NSC                        0x000032fc   Data           4  bsp_linker.o(.rodata.gp_ddsc_FLASH_NSC)
-    gp_ddsc_FLASH_START                      0x00003300   Data           4  bsp_linker.o(.rodata.gp_ddsc_FLASH_START)
-    gp_ddsc_OPTION_SETTING_BANKSEL_END       0x00003304   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_END)
-    gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END   0x00003308   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END)
-    gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START 0x0000330c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START)
-    gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END   0x00003310   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END)
-    gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START 0x00003314   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START)
-    gp_ddsc_OPTION_SETTING_BANKSEL_START     0x00003318   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_START)
-    gp_ddsc_OPTION_SETTING_BPS_END           0x0000331c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_END)
-    gp_ddsc_OPTION_SETTING_BPS_SEC_END       0x00003320   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_END)
-    gp_ddsc_OPTION_SETTING_BPS_SEC_START     0x00003324   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_START)
-    gp_ddsc_OPTION_SETTING_BPS_SEL_END       0x00003328   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_END)
-    gp_ddsc_OPTION_SETTING_BPS_SEL_START     0x0000332c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_START)
-    gp_ddsc_OPTION_SETTING_BPS_START         0x00003330   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_START)
-    gp_ddsc_OPTION_SETTING_DUALSEL_END       0x00003334   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_END)
-    gp_ddsc_OPTION_SETTING_DUALSEL_START     0x00003338   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_START)
-    gp_ddsc_OPTION_SETTING_OFS0_END          0x0000333c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_END)
-    gp_ddsc_OPTION_SETTING_OFS0_START        0x00003340   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_START)
-    gp_ddsc_OPTION_SETTING_OFS1_END          0x00003344   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_END)
-    gp_ddsc_OPTION_SETTING_OFS1_SEC_END      0x00003348   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_END)
-    gp_ddsc_OPTION_SETTING_OFS1_SEC_START    0x0000334c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_START)
-    gp_ddsc_OPTION_SETTING_OFS1_SEL_END      0x00003350   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_END)
-    gp_ddsc_OPTION_SETTING_OFS1_SEL_START    0x00003354   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_START)
-    gp_ddsc_OPTION_SETTING_OFS1_START        0x00003358   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_START)
-    gp_ddsc_OPTION_SETTING_PBPS_END          0x0000335c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_END)
-    gp_ddsc_OPTION_SETTING_PBPS_SEC_END      0x00003360   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_END)
-    gp_ddsc_OPTION_SETTING_PBPS_SEC_START    0x00003364   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_START)
-    gp_ddsc_OPTION_SETTING_PBPS_START        0x00003368   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_START)
-    gp_ddsc_OSPI0_CS0_END                    0x0000336c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_END)
-    gp_ddsc_OSPI0_CS0_START                  0x00003370   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_START)
-    gp_ddsc_OSPI0_CS1_END                    0x00003374   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_END)
-    gp_ddsc_OSPI0_CS1_START                  0x00003378   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_START)
-    gp_ddsc_QSPI_FLASH_END                   0x0000337c   Data           4  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_END)
-    gp_ddsc_QSPI_FLASH_START                 0x00003380   Data           4  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_START)
-    gp_ddsc_RAM_END                          0x00003384   Data           4  bsp_linker.o(.rodata.gp_ddsc_RAM_END)
-    gp_ddsc_RAM_NSC                          0x00003388   Data           4  bsp_linker.o(.rodata.gp_ddsc_RAM_NSC)
-    gp_ddsc_RAM_START                        0x0000338c   Data           4  bsp_linker.o(.rodata.gp_ddsc_RAM_START)
-    Image$$__ddsc_FLASH_END$$Base            0x00003800   Number         0  anon$$obj.o ABSOLUTE
-    Image$$__ddsc_FLASH_NSC$$Base            0x00003800   Number         0  anon$$obj.o ABSOLUTE
+    strstr                                   0x00000135   Thumb Code    36  strstr.o(.text)
+    memcmp                                   0x00000159   Thumb Code    26  memcmp.o(.text)
+    __0sscanf                                0x00000175   Thumb Code    48  __0sscanf.o(.text)
+    _scanf_real                              0x000002d5   Thumb Code     0  scanf_fp.o(.text)
+    _scanf_really_real                       0x000002d5   Thumb Code   556  scanf_fp.o(.text)
+    __aeabi_f2d                              0x0000050d   Thumb Code    38  f2d.o(.text)
+    __aeabi_uidiv                            0x00000533   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x00000533   Thumb Code    44  uidiv.o(.text)
+    __aeabi_uldivmod                         0x0000055f   Thumb Code    98  uldiv.o(.text)
+    __vfscanf_char                           0x000005cd   Thumb Code    20  scanf_char.o(.text)
+    _sgetc                                   0x000005e9   Thumb Code    30  _sgetc.o(.text)
+    _sbackspace                              0x00000607   Thumb Code    34  _sgetc.o(.text)
+    __I$use$fp                               0x00000629   Thumb Code     0  iusefp.o(.text)
+    __aeabi_dadd                             0x00000629   Thumb Code   322  dadd.o(.text)
+    __aeabi_dsub                             0x0000076b   Thumb Code     6  dadd.o(.text)
+    __aeabi_drsub                            0x00000771   Thumb Code     6  dadd.o(.text)
+    __aeabi_dmul                             0x00000777   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x0000085b   Thumb Code   222  ddiv.o(.text)
+    __aeabi_ul2d                             0x00000939   Thumb Code    24  dfltul.o(.text)
+    __aeabi_d2ulz                            0x00000951   Thumb Code    48  dfixul.o(.text)
+    __aeabi_cdrcmple                         0x00000981   Thumb Code    48  cdrcmple.o(.text)
+    __aeabi_d2f                              0x000009b1   Thumb Code    56  d2f.o(.text)
+    __aeabi_llsl                             0x000009e9   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x000009e9   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x00000a07   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x00000a07   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x00000a27   Thumb Code    36  llsshr.o(.text)
+    _ll_sshift_r                             0x00000a27   Thumb Code     0  llsshr.o(.text)
+    isspace                                  0x00000a4b   Thumb Code    10  isspace_c.o(.text)
+    __vfscanf                                0x00000a55   Thumb Code   808  _scanf.o(.text)
+    _float_round                             0x00000d81   Thumb Code    18  fepilogue.o(.text)
+    _float_epilogue                          0x00000d93   Thumb Code    92  fepilogue.o(.text)
+    _double_round                            0x00000def   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x00000e0d   Thumb Code   156  depilogue.o(.text)
+    __ctype_lookup                           0x00000ea9   Thumb Code    34  ctype_c.o(.text)
+    Bh1750_Init                              0x00000ed1   Thumb Code    70  driver_bh1750_1.o(.text.Bh1750_Init)
+    Bh1750_ReadLux                           0x00000f19   Thumb Code   176  driver_bh1750_1.o(.text.Bh1750_ReadLux)
+    BusFault_Handler                         0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    DebugMon_Handler                         0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    Default_Handler                          0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    HardFault_Handler                        0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    MemManage_Handler                        0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    PendSV_Handler                           0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    SVC_Handler                              0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    SecureFault_Handler                      0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    SysTick_Handler                          0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    UsageFault_Handler                       0x00000fcd   Thumb Code     4  startup.o(.text.Default_Handler)
+    Dht22_Read                               0x00000fd1   Thumb Code   428  driver_dht22_1.o(.text.Dht22_Read)
+    Farm_Data_Analysis                       0x0000117d   Thumb Code   648  farm_analysis.o(.text.Farm_Data_Analysis)
+    Farm_Data_Init                           0x0000149d   Thumb Code    26  farm_analysis.o(.text.Farm_Data_Init)
+    Hmi_SendCmd                              0x000014b9   Thumb Code    52  hal_entry_1.o(.text.Hmi_SendCmd)
+    NMI_Handler                              0x000014f1   Thumb Code    68  bsp_group_irq.o(.text.NMI_Handler)
+    R_BSP_Init_RTC                           0x00001535   Thumb Code   122  bsp_clocks.o(.text.R_BSP_Init_RTC)
+    R_BSP_RegisterProtectDisable             0x000015af   Thumb Code    78  bsp_register_protection.o(.text.R_BSP_RegisterProtectDisable)
+    R_BSP_RegisterProtectEnable              0x000015fd   Thumb Code    82  bsp_register_protection.o(.text.R_BSP_RegisterProtectEnable)
+    R_BSP_SoftwareDelay                      0x0000164f   Thumb Code   132  bsp_delay.o(.text.R_BSP_SoftwareDelay)
+    R_BSP_SubClockStabilizeWaitAfterReset    0x000016d3   Thumb Code     2  bsp_clocks.o(.text.R_BSP_SubClockStabilizeWaitAfterReset)
+    R_BSP_WarmStart                          0x000016d5   Thumb Code    26  hal_warmstart_1.o(.text.R_BSP_WarmStart)
+    R_IOPORT_Open                            0x000016ef   Thumb Code    22  r_ioport.o(.text.R_IOPORT_Open)
+    R_IOPORT_PinCfg                          0x00001705   Thumb Code   178  r_ioport.o(.text.R_IOPORT_PinCfg)
+    R_IOPORT_PinRead                         0x000017b7   Thumb Code    34  r_ioport.o(.text.R_IOPORT_PinRead)
+    R_IOPORT_PinWrite                        0x000017d9   Thumb Code    40  r_ioport.o(.text.R_IOPORT_PinWrite)
+    R_SCI_I2C_Abort                          0x00001801   Thumb Code    40  r_sci_i2c.o(.text.R_SCI_I2C_Abort)
+    R_SCI_I2C_CallbackSet                    0x00001829   Thumb Code    14  r_sci_i2c.o(.text.R_SCI_I2C_CallbackSet)
+    R_SCI_I2C_Close                          0x00001837   Thumb Code    86  r_sci_i2c.o(.text.R_SCI_I2C_Close)
+    R_SCI_I2C_Open                           0x0000188d   Thumb Code   346  r_sci_i2c.o(.text.R_SCI_I2C_Open)
+    R_SCI_I2C_Read                           0x000019e7   Thumb Code    16  r_sci_i2c.o(.text.R_SCI_I2C_Read)
+    R_SCI_I2C_SlaveAddressSet                0x000019f7   Thumb Code    10  r_sci_i2c.o(.text.R_SCI_I2C_SlaveAddressSet)
+    R_SCI_I2C_StatusGet                      0x00001a01   Thumb Code    24  r_sci_i2c.o(.text.R_SCI_I2C_StatusGet)
+    R_SCI_I2C_Write                          0x00001a19   Thumb Code    16  r_sci_i2c.o(.text.R_SCI_I2C_Write)
+    R_SCI_UART_Open                          0x00001a29   Thumb Code   828  r_sci_uart.o(.text.R_SCI_UART_Open)
+    R_SCI_UART_Read                          0x00001d65   Thumb Code    10  r_sci_uart.o(.text.R_SCI_UART_Read)
+    R_SCI_UART_Write                         0x00001d6f   Thumb Code    76  r_sci_uart.o(.text.R_SCI_UART_Write)
+    Reset_Handler                            0x00001dbd   Thumb Code    10  startup.o(.text.Reset_Handler)
+    SystemCoreClockUpdate                    0x00001dc7   Thumb Code    44  bsp_clocks.o(.text.SystemCoreClockUpdate)
+    SystemInit                               0x00001df5   Thumb Code   162  system.o(.text.SystemInit)
+    Uart_Init                                0x00001ef3   Thumb Code     8  driver_uart_1.o(.text.Uart_Init)
+    Uart_Printf                              0x00001efd   Thumb Code    80  driver_uart_1.o(.text.Uart_Printf)
+    Uart_Send                                0x00001f4d   Thumb Code    32  driver_uart_1.o(.text.Uart_Send)
+    Uart_StartRx                             0x00001f6d   Thumb Code    12  driver_uart_1.o(.text.Uart_StartRx)
+    bsp_clock_init                           0x00001fe9   Thumb Code   316  bsp_clocks.o(.text.bsp_clock_init)
+    bsp_init                                 0x00002125   Thumb Code     2  bsp_common.o(.text.bsp_init_internal)
+    bsp_init_internal                        0x00002125   Thumb Code     2  bsp_common.o(.text.bsp_init_internal)
+    bsp_irq_cfg                              0x00002129   Thumb Code   138  bsp_irq.o(.text.bsp_irq_cfg)
+    bsp_prv_software_delay_loop              0x000021b3   Thumb Code     8  bsp_delay.o(.text.bsp_prv_software_delay_loop)
+    hal_entry                                0x00002295   Thumb Code  2256  hal_entry_1.o(.text.hal_entry)
+    main                                     0x00002c05   Thumb Code    10  main.o(.text.main)
+    sci_i2c_master_callback                  0x00002d11   Thumb Code    50  hal_entry_1.o(.text.sci_i2c_master_callback)
+    sci_i2c_tei_isr                          0x00002ddb   Thumb Code   284  r_sci_i2c.o(.text.sci_i2c_tei_isr)
+    sci_i2c_txi_isr                          0x00002ef7   Thumb Code   296  r_sci_i2c.o(.text.sci_i2c_txi_isr)
+    sci_uart_eri_isr                         0x0000301f   Thumb Code   106  r_sci_uart.o(.text.sci_uart_eri_isr)
+    sci_uart_rxi_isr                         0x00003089   Thumb Code   136  r_sci_uart.o(.text.sci_uart_rxi_isr)
+    sci_uart_tei_isr                         0x00003111   Thumb Code    74  r_sci_uart.o(.text.sci_uart_tei_isr)
+    sci_uart_txi_isr                         0x0000315b   Thumb Code   136  r_sci_uart.o(.text.sci_uart_txi_isr)
+    uart2_callback                           0x000031e3   Thumb Code    22  hal_entry_1.o(.text.uart2_callback)
+    uart4_callback                           0x000031f9   Thumb Code    40  hal_entry_1.o(.text.uart4_callback)
+    uart7_callback                           0x00003221   Thumb Code    22  hal_entry_1.o(.text.uart7_callback)
+    uart8_callback                           0x00003237   Thumb Code    40  hal_entry_1.o(.text.uart8_callback)
+    uart9_callback                           0x0000325f   Thumb Code    40  hal_entry_1.o(.text.uart9_callback)
+    __0snprintf                              0x00003289   Thumb Code    48  printfa.o(i.__0snprintf)
+    __1snprintf                              0x00003289   Thumb Code     0  printfa.o(i.__0snprintf)
+    __2snprintf                              0x00003289   Thumb Code     0  printfa.o(i.__0snprintf)
+    __c89snprintf                            0x00003289   Thumb Code     0  printfa.o(i.__0snprintf)
+    snprintf                                 0x00003289   Thumb Code     0  printfa.o(i.__0snprintf)
+    __0vsnprintf                             0x000032bd   Thumb Code    46  printfa.o(i.__0vsnprintf)
+    __1vsnprintf                             0x000032bd   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    __2vsnprintf                             0x000032bd   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    __c89vsnprintf                           0x000032bd   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    vsnprintf                                0x000032bd   Thumb Code     0  printfa.o(i.__0vsnprintf)
+    _is_digit                                0x00003475   Thumb Code    14  scanf_fp.o(i._is_digit)
+    __ctype_categories                       0x00003bc8   Data          64  ctype_c.o(.constdata)
+    g_bsp_pin_cfg                            0x00003c9c   Data          12  pin_data.o(.rodata.g_bsp_pin_cfg)
+    g_bsp_pin_cfg_data                       0x00003ca8   Data         120  pin_data.o(.rodata.g_bsp_pin_cfg_data)
+    g_i2c5                                   0x00003d20   Data          12  hal_data.o(.rodata.g_i2c5)
+    g_i2c5_cfg                               0x00003d2c   Data          56  hal_data.o(.rodata.g_i2c5_cfg)
+    g_i2c5_cfg_extend                        0x00003d64   Data           6  hal_data.o(.rodata.g_i2c5_cfg_extend)
+    g_i2c_master_on_sci                      0x00003d6c   Data          32  r_sci_i2c.o(.rodata.g_i2c_master_on_sci)
+    g_init_info                              0x00003d8c   Data          24  bsp_linker.o(.rodata.g_init_info)
+    g_interrupt_event_link_select            0x00003da4   Data          88  vector_data.o(.rodata.g_interrupt_event_link_select)
+    g_uart2_cfg                              0x00003e08   Data          68  hal_data.o(.rodata.g_uart2_cfg)
+    g_uart2_cfg_extend                       0x00003e4c   Data          44  hal_data.o(.rodata.g_uart2_cfg_extend)
+    g_uart4_cfg                              0x00003e78   Data          68  hal_data.o(.rodata.g_uart4_cfg)
+    g_uart4_cfg_extend                       0x00003ebc   Data          44  hal_data.o(.rodata.g_uart4_cfg_extend)
+    g_uart7_cfg                              0x00003ee8   Data          68  hal_data.o(.rodata.g_uart7_cfg)
+    g_uart7_cfg_extend                       0x00003f2c   Data          44  hal_data.o(.rodata.g_uart7_cfg_extend)
+    g_uart8_cfg                              0x00003f58   Data          68  hal_data.o(.rodata.g_uart8_cfg)
+    g_uart8_cfg_extend                       0x00003f9c   Data          44  hal_data.o(.rodata.g_uart8_cfg_extend)
+    g_uart9_cfg                              0x00003fc8   Data          68  hal_data.o(.rodata.g_uart9_cfg)
+    g_uart9_cfg_extend                       0x0000400c   Data          44  hal_data.o(.rodata.g_uart9_cfg_extend)
+    gp_ddsc_DATA_FLASH_END                   0x00004038   Data           4  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_END)
+    gp_ddsc_DATA_FLASH_START                 0x0000403c   Data           4  bsp_linker.o(.rodata.gp_ddsc_DATA_FLASH_START)
+    gp_ddsc_FLASH_END                        0x00004040   Data           4  bsp_linker.o(.rodata.gp_ddsc_FLASH_END)
+    gp_ddsc_FLASH_NSC                        0x00004044   Data           4  bsp_linker.o(.rodata.gp_ddsc_FLASH_NSC)
+    gp_ddsc_FLASH_START                      0x00004048   Data           4  bsp_linker.o(.rodata.gp_ddsc_FLASH_START)
+    gp_ddsc_OPTION_SETTING_BANKSEL_END       0x0000404c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_END)
+    gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END   0x00004050   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END)
+    gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START 0x00004054   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START)
+    gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END   0x00004058   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END)
+    gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START 0x0000405c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START)
+    gp_ddsc_OPTION_SETTING_BANKSEL_START     0x00004060   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BANKSEL_START)
+    gp_ddsc_OPTION_SETTING_BPS_END           0x00004064   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_END)
+    gp_ddsc_OPTION_SETTING_BPS_SEC_END       0x00004068   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_END)
+    gp_ddsc_OPTION_SETTING_BPS_SEC_START     0x0000406c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_START)
+    gp_ddsc_OPTION_SETTING_BPS_SEL_END       0x00004070   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_END)
+    gp_ddsc_OPTION_SETTING_BPS_SEL_START     0x00004074   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_START)
+    gp_ddsc_OPTION_SETTING_BPS_START         0x00004078   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_BPS_START)
+    gp_ddsc_OPTION_SETTING_DUALSEL_END       0x0000407c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_END)
+    gp_ddsc_OPTION_SETTING_DUALSEL_START     0x00004080   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_DUALSEL_START)
+    gp_ddsc_OPTION_SETTING_OFS0_END          0x00004084   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_END)
+    gp_ddsc_OPTION_SETTING_OFS0_START        0x00004088   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS0_START)
+    gp_ddsc_OPTION_SETTING_OFS1_END          0x0000408c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_END)
+    gp_ddsc_OPTION_SETTING_OFS1_SEC_END      0x00004090   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_END)
+    gp_ddsc_OPTION_SETTING_OFS1_SEC_START    0x00004094   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_START)
+    gp_ddsc_OPTION_SETTING_OFS1_SEL_END      0x00004098   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_END)
+    gp_ddsc_OPTION_SETTING_OFS1_SEL_START    0x0000409c   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_START)
+    gp_ddsc_OPTION_SETTING_OFS1_START        0x000040a0   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_OFS1_START)
+    gp_ddsc_OPTION_SETTING_PBPS_END          0x000040a4   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_END)
+    gp_ddsc_OPTION_SETTING_PBPS_SEC_END      0x000040a8   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_END)
+    gp_ddsc_OPTION_SETTING_PBPS_SEC_START    0x000040ac   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_START)
+    gp_ddsc_OPTION_SETTING_PBPS_START        0x000040b0   Data           4  bsp_linker.o(.rodata.gp_ddsc_OPTION_SETTING_PBPS_START)
+    gp_ddsc_OSPI0_CS0_END                    0x000040b4   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_END)
+    gp_ddsc_OSPI0_CS0_START                  0x000040b8   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS0_START)
+    gp_ddsc_OSPI0_CS1_END                    0x000040bc   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_END)
+    gp_ddsc_OSPI0_CS1_START                  0x000040c0   Data           4  bsp_linker.o(.rodata.gp_ddsc_OSPI0_CS1_START)
+    gp_ddsc_QSPI_FLASH_END                   0x000040c4   Data           4  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_END)
+    gp_ddsc_QSPI_FLASH_START                 0x000040c8   Data           4  bsp_linker.o(.rodata.gp_ddsc_QSPI_FLASH_START)
+    gp_ddsc_RAM_END                          0x000040cc   Data           4  bsp_linker.o(.rodata.gp_ddsc_RAM_END)
+    gp_ddsc_RAM_NSC                          0x000040d0   Data           4  bsp_linker.o(.rodata.gp_ddsc_RAM_NSC)
+    gp_ddsc_RAM_START                        0x000040d4   Data           4  bsp_linker.o(.rodata.gp_ddsc_RAM_START)
+    Image$$__ddsc_FLASH_END$$Base            0x00004800   Number         0  anon$$obj.o ABSOLUTE
+    Image$$__ddsc_FLASH_NSC$$Base            0x00004800   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_OPTION_SETTING_OFS0_START$$Base 0x0100a100   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_OPTION_SETTING_OFS0_END$$Base 0x0100a104   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_OPTION_SETTING_DUALSEL_END$$Base 0x0100a110   Number         0  anon$$obj.o ABSOLUTE
@@ -1348,20 +1489,21 @@ Image Symbol Table
     g_main_stack                             0x20000060   Data        1024  startup.o(.bss.g_main_stack)
     Image$$__ram_zero$$ZI$$Base              0x2000047c   Number         0  anon$$obj.o ABSOLUTE
     SystemCoreClock                          0x2000047c   Data           4  system.o(.bss.SystemCoreClock)
-    g_bsp_group_irq_sources                  0x20000900   Data          64  bsp_group_irq.o(.bss.g_bsp_group_irq_sources)
-    g_i2c5_ctrl                              0x20000948   Data          72  hal_data.o(.bss.g_i2c5_ctrl)
-    g_i2c_aborted                            0x20000990   Data           1  hal_entry_1.o(.bss.g_i2c_aborted)
-    g_i2c_completed                          0x20000991   Data           1  hal_entry_1.o(.bss.g_i2c_completed)
-    g_ioport_ctrl                            0x20000994   Data           8  common_data.o(.bss.g_ioport_ctrl)
-    g_protect_counters                       0x2000099c   Data          10  bsp_register_protection.o(.bss.g_protect_counters)
-    g_protect_pfswe_counter                  0x200009a8   Data           4  bsp_io.o(.bss.g_protect_pfswe_counter)
-    g_uart2_ctrl                             0x200009ac   Data          48  hal_data.o(.bss.g_uart2_ctrl)
-    g_uart4_ctrl                             0x200009dc   Data          48  hal_data.o(.bss.g_uart4_ctrl)
-    g_uart7_ctrl                             0x20000a0c   Data          48  hal_data.o(.bss.g_uart7_ctrl)
-    g_uart8_ctrl                             0x20000a3c   Data          48  hal_data.o(.bss.g_uart8_ctrl)
-    g_uart9_ctrl                             0x20000a6c   Data          48  hal_data.o(.bss.g_uart9_ctrl)
-    gp_renesas_isr_context                   0x20000a9c   Data          88  bsp_irq.o(.bss.gp_renesas_isr_context)
-    Image$$__ram_zero$$ZI$$Limit             0x20000af4   Number         0  anon$$obj.o ABSOLUTE
+    g_bsp_group_irq_sources                  0x2000093c   Data          64  bsp_group_irq.o(.bss.g_bsp_group_irq_sources)
+    g_farm_data                              0x20000984   Data          28  farm_analysis.o(.bss.g_farm_data)
+    g_i2c5_ctrl                              0x200009a0   Data          72  hal_data.o(.bss.g_i2c5_ctrl)
+    g_i2c_aborted                            0x200009e8   Data           1  hal_entry_1.o(.bss.g_i2c_aborted)
+    g_i2c_completed                          0x200009e9   Data           1  hal_entry_1.o(.bss.g_i2c_completed)
+    g_ioport_ctrl                            0x200009ec   Data           8  common_data.o(.bss.g_ioport_ctrl)
+    g_protect_counters                       0x200009f4   Data          10  bsp_register_protection.o(.bss.g_protect_counters)
+    g_protect_pfswe_counter                  0x20000a00   Data           4  bsp_io.o(.bss.g_protect_pfswe_counter)
+    g_uart2_ctrl                             0x20000a04   Data          48  hal_data.o(.bss.g_uart2_ctrl)
+    g_uart4_ctrl                             0x20000a34   Data          48  hal_data.o(.bss.g_uart4_ctrl)
+    g_uart7_ctrl                             0x20000a64   Data          48  hal_data.o(.bss.g_uart7_ctrl)
+    g_uart8_ctrl                             0x20000a94   Data          48  hal_data.o(.bss.g_uart8_ctrl)
+    g_uart9_ctrl                             0x20000ac4   Data          48  hal_data.o(.bss.g_uart9_ctrl)
+    gp_renesas_isr_context                   0x20000af4   Data          88  bsp_irq.o(.bss.gp_renesas_isr_context)
+    Image$$__ram_zero$$ZI$$Limit             0x20000b4c   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_RAM_END$$Base              0x20000c00   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_RAM_NSC$$Base              0x20000c00   Number         0  anon$$obj.o ABSOLUTE
     Image$$__ddsc_QSPI_FLASH_END$$Base       0x60000000   Number         0  anon$$obj.o ABSOLUTE
@@ -1394,7 +1536,7 @@ Image Symbol Table
 
 Memory Map of the image
 
-  Image Entry point : 0x00001241
+  Image Entry point : 0x00001dbd
 
   Load Region LOAD_REGION_QSPI_FLASH (Base: 0x60000000, Size: 0x00000000, Max: 0x04000000, ABSOLUTE)
 
@@ -1737,8 +1879,8 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x00000000   0x00000040   Data   RO          259    .fixed_vectors      startup.o
-    0x00000040   0x00000040   0x00000058   Data   RO          626    .application_vectors  vector_data.o
+    0x00000000   0x00000000   0x00000040   Data   RO          275    .fixed_vectors      startup.o
+    0x00000040   0x00000040   0x00000058   Data   RO          642    .application_vectors  vector_data.o
 
 
     Execution Region __flash_noinit (Exec base: 0x00000098, Load base: 0x00000098, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE, UNINIT, FIXED)
@@ -1757,17 +1899,17 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000098   0x00000004   Data   RW          209    .data.Dht22         driver_dht22_1.o
-    0x20000004   0x0000009c   0x0000000c   Data   RW          230    .data.Uart8         driver_uart_1.o
-    0x20000010   0x000000a8   0x0000000c   Data   RW          229    .data.UartFace      driver_uart_1.o
-    0x2000001c   0x000000b4   0x0000000c   Data   RW          227    .data.UartHmi       driver_uart_1.o
-    0x20000028   0x000000c0   0x0000000c   Data   RW          228    .data.UartPc        driver_uart_1.o
-    0x20000034   0x000000cc   0x0000000c   Data   RW          226    .data.UartSensor    driver_uart_1.o
-    0x20000040   0x000000d8   0x00000004   Data   RW          599    .data.g_uart2_baud_setting  hal_data.o
-    0x20000044   0x000000dc   0x00000004   Data   RW          594    .data.g_uart4_baud_setting  hal_data.o
-    0x20000048   0x000000e0   0x00000004   Data   RW          589    .data.g_uart7_baud_setting  hal_data.o
-    0x2000004c   0x000000e4   0x00000004   Data   RW          579    .data.g_uart8_baud_setting  hal_data.o
-    0x20000050   0x000000e8   0x00000004   Data   RW          584    .data.g_uart9_baud_setting  hal_data.o
+    0x20000000   0x00000098   0x00000004   Data   RW          225    .data.Dht22         driver_dht22_1.o
+    0x20000004   0x0000009c   0x0000000c   Data   RW          246    .data.Uart8         driver_uart_1.o
+    0x20000010   0x000000a8   0x0000000c   Data   RW          245    .data.UartFace      driver_uart_1.o
+    0x2000001c   0x000000b4   0x0000000c   Data   RW          243    .data.UartHmi       driver_uart_1.o
+    0x20000028   0x000000c0   0x0000000c   Data   RW          244    .data.UartPc        driver_uart_1.o
+    0x20000034   0x000000cc   0x0000000c   Data   RW          242    .data.UartSensor    driver_uart_1.o
+    0x20000040   0x000000d8   0x00000004   Data   RW          615    .data.g_uart2_baud_setting  hal_data.o
+    0x20000044   0x000000dc   0x00000004   Data   RW          610    .data.g_uart4_baud_setting  hal_data.o
+    0x20000048   0x000000e0   0x00000004   Data   RW          605    .data.g_uart7_baud_setting  hal_data.o
+    0x2000004c   0x000000e4   0x00000004   Data   RW          595    .data.g_uart8_baud_setting  hal_data.o
+    0x20000050   0x000000e8   0x00000004   Data   RW          600    .data.g_uart9_baud_setting  hal_data.o
 
 
     Execution Region __ram_noinit_nocache (Exec base: 0x20000060, Load base: 0x000000ec, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE, UNINIT)
@@ -1803,66 +1945,70 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000060        -       0x00000000   Zero   RW          260    .bss.g_heap         startup.o
+    0x20000060        -       0x00000000   Zero   RW          276    .bss.g_heap         startup.o
 
 
     Execution Region __post_heap (Exec base: 0x20000060, Load base: 0x000000ec, Size: 0x0000041c, Max: 0xffffffff, ABSOLUTE, UNINIT)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000060        -       0x00000400   Zero   RW          258    .bss.g_main_stack   startup.o
-    0x20000460        -       0x0000001c   Zero   RW          305    .bss.ram_noinit     bsp_clocks.o
+    0x20000060        -       0x00000400   Zero   RW          274    .bss.g_main_stack   startup.o
+    0x20000460        -       0x0000001c   Zero   RW          321    .bss.ram_noinit     bsp_clocks.o
 
 
-    Execution Region __ram_zero (Exec base: 0x2000047c, Load base: 0x000000ec, Size: 0x00000678, Max: 0xffffffff, ABSOLUTE)
+    Execution Region __ram_zero (Exec base: 0x2000047c, Load base: 0x000000ec, Size: 0x000006d0, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x2000047c        -       0x00000004   Zero   RW          274    .bss.SystemCoreClock  system.o
-    0x20000480        -       0x00000001   Zero   RW          173    .bss.Task_CO2.add_rest_count  hal_entry_1.o
-    0x20000481   0x000000ec   0x00000001   PAD
-    0x20000482        -       0x00000002   Zero   RW          174    .bss.Task_CO2.add_send_count  hal_entry_1.o
-    0x20000484        -       0x00000002   Zero   RW          172    .bss.Task_CO2.low_co2_count  hal_entry_1.o
-    0x20000486        -       0x00000010   Zero   RW          170    .bss.Task_CO2.rx_frame  hal_entry_1.o
-    0x20000496        -       0x00000001   Zero   RW          171    .bss.Task_CO2.rx_index  hal_entry_1.o
-    0x20000497   0x000000ec   0x00000001   PAD
-    0x20000498        -       0x00000004   Zero   RW          168    .bss.Task_DHT22.dht22_read_tick  hal_entry_1.o
-    0x2000049c        -       0x00000100   Zero   RW          182    .bss.Task_Face.sci9_rx_frame  hal_entry_1.o
-    0x2000059c        -       0x00000004   Zero   RW          184    .bss.Task_Face.sci9_rx_idle_tick  hal_entry_1.o
-    0x200005a0        -       0x00000002   Zero   RW          183    .bss.Task_Face.sci9_rx_idx  hal_entry_1.o
-    0x200005a2        -       0x00000040   Zero   RW          175    .bss.Task_HMI.hmi_rx_frame  hal_entry_1.o
-    0x200005e2   0x000000ec   0x00000002   PAD
-    0x200005e4        -       0x00000004   Zero   RW          177    .bss.Task_HMI.hmi_rx_idle_tick  hal_entry_1.o
-    0x200005e8        -       0x00000002   Zero   RW          176    .bss.Task_HMI.hmi_rx_idx  hal_entry_1.o
-    0x200005ea   0x000000ec   0x00000002   PAD
-    0x200005ec        -       0x00000004   Zero   RW          189    .bss.Task_Light.light_tick  hal_entry_1.o
-    0x200005f0        -       0x00000200   Zero   RW          186    .bss.Task_Uart8.rx_frame  hal_entry_1.o
-    0x200007f0        -       0x00000004   Zero   RW          188    .bss.Task_Uart8.rx_idle_tick  hal_entry_1.o
-    0x200007f4        -       0x00000002   Zero   RW          187    .bss.Task_Uart8.rx_idx  hal_entry_1.o
-    0x200007f6        -       0x00000100   Zero   RW          231    .bss.Uart_Printf.buffer  driver_uart_1.o
-    0x200008f6   0x000000ec   0x00000002   PAD
-    0x200008f8        -       0x00000008   Zero   RW          167    .bss.g_bh1750       hal_entry_1.o
-    0x20000900        -       0x00000040   Zero   RW          347    .bss.g_bsp_group_irq_sources  bsp_group_irq.o
-    0x20000940        -       0x00000004   Zero   RW          180    .bss.g_face_delay_tick  hal_entry_1.o
-    0x20000944        -       0x00000001   Zero   RW          179    .bss.g_face_state   hal_entry_1.o
-    0x20000945   0x000000ec   0x00000003   PAD
-    0x20000948        -       0x00000048   Zero   RW          577    .bss.g_i2c5_ctrl    hal_data.o
-    0x20000990        -       0x00000001   Zero   RW          166    .bss.g_i2c_aborted  hal_entry_1.o
-    0x20000991        -       0x00000001   Zero   RW          165    .bss.g_i2c_completed  hal_entry_1.o
-    0x20000992   0x000000ec   0x00000002   PAD
-    0x20000994        -       0x00000008   Zero   RW          565    .bss.g_ioport_ctrl  common_data.o
-    0x2000099c        -       0x0000000a   Zero   RW          381    .bss.g_protect_counters  bsp_register_protection.o
-    0x200009a6   0x000000ec   0x00000002   PAD
-    0x200009a8        -       0x00000004   Zero   RW          357    .bss.g_protect_pfswe_counter  bsp_io.o
-    0x200009ac        -       0x00000030   Zero   RW          602    .bss.g_uart2_ctrl   hal_data.o
-    0x200009dc        -       0x00000030   Zero   RW          597    .bss.g_uart4_ctrl   hal_data.o
-    0x20000a0c        -       0x00000030   Zero   RW          592    .bss.g_uart7_ctrl   hal_data.o
-    0x20000a3c        -       0x00000030   Zero   RW          582    .bss.g_uart8_ctrl   hal_data.o
-    0x20000a6c        -       0x00000030   Zero   RW          587    .bss.g_uart9_ctrl   hal_data.o
-    0x20000a9c        -       0x00000058   Zero   RW          367    .bss.gp_renesas_isr_context  bsp_irq.o
+    0x2000047c        -       0x00000004   Zero   RW          290    .bss.SystemCoreClock  system.o
+    0x20000480        -       0x00000004   Zero   RW          205    .bss.Task_Analysis.analysis_tick  hal_entry_1.o
+    0x20000484        -       0x00000001   Zero   RW          187    .bss.Task_CO2.add_rest_count  hal_entry_1.o
+    0x20000485   0x000000ec   0x00000001   PAD
+    0x20000486        -       0x00000002   Zero   RW          188    .bss.Task_CO2.add_send_count  hal_entry_1.o
+    0x20000488        -       0x00000002   Zero   RW          186    .bss.Task_CO2.low_co2_count  hal_entry_1.o
+    0x2000048a        -       0x00000040   Zero   RW          183    .bss.Task_CO2.rx_frame  hal_entry_1.o
+    0x200004ca   0x000000ec   0x00000002   PAD
+    0x200004cc        -       0x00000004   Zero   RW          185    .bss.Task_CO2.rx_idle_tick  hal_entry_1.o
+    0x200004d0        -       0x00000001   Zero   RW          184    .bss.Task_CO2.rx_idx  hal_entry_1.o
+    0x200004d1   0x000000ec   0x00000003   PAD
+    0x200004d4        -       0x00000004   Zero   RW          182    .bss.Task_DHT22.dht22_read_tick  hal_entry_1.o
+    0x200004d8        -       0x00000100   Zero   RW          197    .bss.Task_Face.sci9_rx_frame  hal_entry_1.o
+    0x200005d8        -       0x00000004   Zero   RW          199    .bss.Task_Face.sci9_rx_idle_tick  hal_entry_1.o
+    0x200005dc        -       0x00000002   Zero   RW          198    .bss.Task_Face.sci9_rx_idx  hal_entry_1.o
+    0x200005de        -       0x00000040   Zero   RW          189    .bss.Task_HMI.hmi_rx_frame  hal_entry_1.o
+    0x2000061e   0x000000ec   0x00000002   PAD
+    0x20000620        -       0x00000004   Zero   RW          191    .bss.Task_HMI.hmi_rx_idle_tick  hal_entry_1.o
+    0x20000624        -       0x00000002   Zero   RW          190    .bss.Task_HMI.hmi_rx_idx  hal_entry_1.o
+    0x20000626   0x000000ec   0x00000002   PAD
+    0x20000628        -       0x00000004   Zero   RW          204    .bss.Task_Light.light_tick  hal_entry_1.o
+    0x2000062c        -       0x00000200   Zero   RW          201    .bss.Task_Uart8.rx_frame  hal_entry_1.o
+    0x2000082c        -       0x00000004   Zero   RW          203    .bss.Task_Uart8.rx_idle_tick  hal_entry_1.o
+    0x20000830        -       0x00000002   Zero   RW          202    .bss.Task_Uart8.rx_idx  hal_entry_1.o
+    0x20000832        -       0x00000100   Zero   RW          247    .bss.Uart_Printf.buffer  driver_uart_1.o
+    0x20000932   0x000000ec   0x00000002   PAD
+    0x20000934        -       0x00000008   Zero   RW          181    .bss.g_bh1750       hal_entry_1.o
+    0x2000093c        -       0x00000040   Zero   RW          363    .bss.g_bsp_group_irq_sources  bsp_group_irq.o
+    0x2000097c        -       0x00000004   Zero   RW          194    .bss.g_face_delay_tick  hal_entry_1.o
+    0x20000980        -       0x00000001   Zero   RW          193    .bss.g_face_state   hal_entry_1.o
+    0x20000981   0x000000ec   0x00000003   PAD
+    0x20000984        -       0x0000001c   Zero   RW          153    .bss.g_farm_data    farm_analysis.o
+    0x200009a0        -       0x00000048   Zero   RW          593    .bss.g_i2c5_ctrl    hal_data.o
+    0x200009e8        -       0x00000001   Zero   RW          180    .bss.g_i2c_aborted  hal_entry_1.o
+    0x200009e9        -       0x00000001   Zero   RW          179    .bss.g_i2c_completed  hal_entry_1.o
+    0x200009ea   0x000000ec   0x00000002   PAD
+    0x200009ec        -       0x00000008   Zero   RW          581    .bss.g_ioport_ctrl  common_data.o
+    0x200009f4        -       0x0000000a   Zero   RW          397    .bss.g_protect_counters  bsp_register_protection.o
+    0x200009fe   0x000000ec   0x00000002   PAD
+    0x20000a00        -       0x00000004   Zero   RW          373    .bss.g_protect_pfswe_counter  bsp_io.o
+    0x20000a04        -       0x00000030   Zero   RW          618    .bss.g_uart2_ctrl   hal_data.o
+    0x20000a34        -       0x00000030   Zero   RW          613    .bss.g_uart4_ctrl   hal_data.o
+    0x20000a64        -       0x00000030   Zero   RW          608    .bss.g_uart7_ctrl   hal_data.o
+    0x20000a94        -       0x00000030   Zero   RW          598    .bss.g_uart8_ctrl   hal_data.o
+    0x20000ac4        -       0x00000030   Zero   RW          603    .bss.g_uart9_ctrl   hal_data.o
+    0x20000af4        -       0x00000058   Zero   RW          383    .bss.gp_renesas_isr_context  bsp_irq.o
 
 
-    Execution Region __ram_thread_stack (Exec base: 0x20000af8, Load base: 0x000000ec, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE, UNINIT)
+    Execution Region __ram_thread_stack (Exec base: 0x20000b50, Load base: 0x000000ec, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE, UNINIT)
 
     **** No section assigned to this execution region ****
 
@@ -1963,229 +2109,247 @@ Memory Map of the image
 
 
 
-  Load Region LOAD_REGION_FLASH_JUMP (Base: 0x000000ec, Size: 0x000035a0, Max: 0xffffffff, ABSOLUTE)
+  Load Region LOAD_REGION_FLASH_JUMP (Base: 0x000000ec, Size: 0x00004364, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region __flash_readonly (Exec base: 0x000000ec, Load base: 0x000000ec, Size: 0x000035a0, Max: 0xffffffff, ABSOLUTE, FIXED)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x000000ec   0x000000ec   0x00000024   Code   RO          636    .text               mc_w.l(memcpya.o)
-    0x00000110   0x00000110   0x00000024   Code   RO          638    .text               mc_w.l(memseta.o)
-    0x00000134   0x00000134   0x0000001a   Code   RO          640    .text               mc_w.l(memcmp.o)
-    0x0000014e   0x0000014e   0x00000026   Code   RO          905    .text               mf_w.l(f2d.o)
-    0x00000174   0x00000174   0x0000002c   Code   RO          921    .text               mc_w.l(uidiv.o)
-    0x000001a0   0x000001a0   0x00000062   Code   RO          923    .text               mc_w.l(uldiv.o)
-    0x00000202   0x00000202   0x00000000   Code   RO          925    .text               mc_w.l(iusefp.o)
-    0x00000202   0x00000202   0x0000014e   Code   RO          926    .text               mf_w.l(dadd.o)
-    0x00000350   0x00000350   0x000000e4   Code   RO          928    .text               mf_w.l(dmul.o)
-    0x00000434   0x00000434   0x000000de   Code   RO          930    .text               mf_w.l(ddiv.o)
-    0x00000512   0x00000512   0x00000030   Code   RO          932    .text               mf_w.l(dfixul.o)
-    0x00000542   0x00000542   0x00000002   PAD
-    0x00000544   0x00000544   0x00000030   Code   RO          934    .text               mf_w.l(cdrcmple.o)
-    0x00000574   0x00000574   0x0000001e   Code   RO          937    .text               mc_w.l(llshl.o)
-    0x00000592   0x00000592   0x00000020   Code   RO          939    .text               mc_w.l(llushr.o)
-    0x000005b2   0x000005b2   0x00000024   Code   RO          941    .text               mc_w.l(llsshr.o)
-    0x000005d6   0x000005d6   0x000000ba   Code   RO          944    .text               mf_w.l(depilogue.o)
-    0x00000690   0x00000690   0x00000046   Code   RO          240    .text.Bh1750_Init   driver_bh1750_1.o
-    0x000006d6   0x000006d6   0x00000002   PAD
-    0x000006d8   0x000006d8   0x000000b4   Code   RO          244    .text.Bh1750_ReadLux  driver_bh1750_1.o
-    0x0000078c   0x0000078c   0x00000004   Code   RO          256    .text.Default_Handler  startup.o
-    0x00000790   0x00000790   0x000001ac   Code   RO          207    .text.Dht22_Read    driver_dht22_1.o
-    0x0000093c   0x0000093c   0x00000038   Code   RO          163    .text.Hmi_SendCmd   hal_entry_1.o
-    0x00000974   0x00000974   0x00000044   Code   RO          345    .text.NMI_Handler   bsp_group_irq.o
-    0x000009b8   0x000009b8   0x0000007a   Code   RO          303    .text.R_BSP_Init_RTC  bsp_clocks.o
-    0x00000a32   0x00000a32   0x0000004e   Code   RO          379    .text.R_BSP_RegisterProtectDisable  bsp_register_protection.o
-    0x00000a80   0x00000a80   0x00000052   Code   RO          377    .text.R_BSP_RegisterProtectEnable  bsp_register_protection.o
-    0x00000ad2   0x00000ad2   0x00000084   Code   RO          331    .text.R_BSP_SoftwareDelay  bsp_delay.o
-    0x00000b56   0x00000b56   0x00000002   Code   RO          297    .text.R_BSP_SubClockStabilizeWaitAfterReset  bsp_clocks.o
-    0x00000b58   0x00000b58   0x0000001a   Code   RO          198    .text.R_BSP_WarmStart  hal_warmstart_1.o
-    0x00000b72   0x00000b72   0x00000016   Code   RO          446    .text.R_IOPORT_Open  r_ioport.o
-    0x00000b88   0x00000b88   0x000000b2   Code   RO          452    .text.R_IOPORT_PinCfg  r_ioport.o
-    0x00000c3a   0x00000c3a   0x00000022   Code   RO          458    .text.R_IOPORT_PinRead  r_ioport.o
-    0x00000c5c   0x00000c5c   0x00000028   Code   RO          460    .text.R_IOPORT_PinWrite  r_ioport.o
-    0x00000c84   0x00000c84   0x00000028   Code   RO          491    .text.R_SCI_I2C_Abort  r_sci_i2c.o
-    0x00000cac   0x00000cac   0x0000000e   Code   RO          495    .text.R_SCI_I2C_CallbackSet  r_sci_i2c.o
-    0x00000cba   0x00000cba   0x00000056   Code   RO          499    .text.R_SCI_I2C_Close  r_sci_i2c.o
-    0x00000d10   0x00000d10   0x0000015a   Code   RO          485    .text.R_SCI_I2C_Open  r_sci_i2c.o
-    0x00000e6a   0x00000e6a   0x00000010   Code   RO          487    .text.R_SCI_I2C_Read  r_sci_i2c.o
-    0x00000e7a   0x00000e7a   0x0000000a   Code   RO          493    .text.R_SCI_I2C_SlaveAddressSet  r_sci_i2c.o
-    0x00000e84   0x00000e84   0x00000018   Code   RO          497    .text.R_SCI_I2C_StatusGet  r_sci_i2c.o
-    0x00000e9c   0x00000e9c   0x00000010   Code   RO          489    .text.R_SCI_I2C_Write  r_sci_i2c.o
-    0x00000eac   0x00000eac   0x0000033c   Code   RO          518    .text.R_SCI_UART_Open  r_sci_uart.o
-    0x000011e8   0x000011e8   0x0000000a   Code   RO          520    .text.R_SCI_UART_Read  r_sci_uart.o
-    0x000011f2   0x000011f2   0x0000004c   Code   RO          522    .text.R_SCI_UART_Write  r_sci_uart.o
-    0x0000123e   0x0000123e   0x00000002   PAD
-    0x00001240   0x00001240   0x0000000a   Code   RO          254  * .text.Reset_Handler  startup.o
-    0x0000124a   0x0000124a   0x0000002c   Code   RO          287    .text.SystemCoreClockUpdate  bsp_clocks.o
-    0x00001276   0x00001276   0x00000002   PAD
-    0x00001278   0x00001278   0x000000a2   Code   RO          268    .text.SystemInit    system.o
-    0x0000131a   0x0000131a   0x00000002   PAD
-    0x0000131c   0x0000131c   0x0000005a   Code   RO          272    .text.SystemRuntimeInit  system.o
-    0x00001376   0x00001376   0x00000008   Code   RO          218    .text.Uart_Init     driver_uart_1.o
-    0x0000137e   0x0000137e   0x00000002   PAD
-    0x00001380   0x00001380   0x00000050   Code   RO          224    .text.Uart_Printf   driver_uart_1.o
-    0x000013d0   0x000013d0   0x00000020   Code   RO          222    .text.Uart_Send     driver_uart_1.o
-    0x000013f0   0x000013f0   0x0000000c   Code   RO          220    .text.Uart_StartRx  driver_uart_1.o
-    0x000013fc   0x000013fc   0x00000070   Code   RO          242    .text.bh1750_write_cmd  driver_bh1750_1.o
-    0x0000146c   0x0000146c   0x0000013c   Code   RO          293    .text.bsp_clock_init  bsp_clocks.o
-    0x000015a8   0x000015a8   0x00000002   Code   RO          314    .text.bsp_init_internal  bsp_common.o
-    0x000015aa   0x000015aa   0x00000002   PAD
-    0x000015ac   0x000015ac   0x0000008a   Code   RO          364    .text.bsp_irq_cfg   bsp_irq.o
-    0x00001636   0x00001636   0x00000008   Code   RO          333    .text.bsp_prv_software_delay_loop  bsp_delay.o
-    0x0000163e   0x0000163e   0x00000002   PAD
-    0x00001640   0x00001640   0x000000d8   Code   RO          474    .text.bsp_vbatt_init  r_ioport.o
-    0x00001718   0x00001718   0x000007f4   Code   RO          161    .text.hal_entry     hal_entry_1.o
-    0x00001f0c   0x00001f0c   0x0000000a   Code   RO          610    .text.main          main.o
-    0x00001f16   0x00001f16   0x00000002   PAD
-    0x00001f18   0x00001f18   0x000000c0   Code   RO          472    .text.r_ioport_pins_config  r_ioport.o
-    0x00001fd8   0x00001fd8   0x00000040   Code   RO          544    .text.r_sci_uart_call_callback  r_sci_uart.o
-    0x00002018   0x00002018   0x00000032   Code   RO          149    .text.sci_i2c_master_callback  hal_entry_1.o
-    0x0000204a   0x0000204a   0x00000098   Code   RO          501    .text.sci_i2c_read_write  r_sci_i2c.o
-    0x000020e2   0x000020e2   0x0000011c   Code   RO          507    .text.sci_i2c_tei_isr  r_sci_i2c.o
-    0x000021fe   0x000021fe   0x00000128   Code   RO          505    .text.sci_i2c_txi_isr  r_sci_i2c.o
-    0x00002326   0x00002326   0x0000006a   Code   RO          550    .text.sci_uart_eri_isr  r_sci_uart.o
-    0x00002390   0x00002390   0x00000088   Code   RO          546    .text.sci_uart_rxi_isr  r_sci_uart.o
-    0x00002418   0x00002418   0x0000004a   Code   RO          548    .text.sci_uart_tei_isr  r_sci_uart.o
-    0x00002462   0x00002462   0x00000088   Code   RO          542    .text.sci_uart_txi_isr  r_sci_uart.o
-    0x000024ea   0x000024ea   0x00000016   Code   RO          151    .text.uart2_callback  hal_entry_1.o
-    0x00002500   0x00002500   0x00000028   Code   RO          153    .text.uart4_callback  hal_entry_1.o
-    0x00002528   0x00002528   0x00000016   Code   RO          155    .text.uart7_callback  hal_entry_1.o
-    0x0000253e   0x0000253e   0x00000028   Code   RO          159    .text.uart8_callback  hal_entry_1.o
-    0x00002566   0x00002566   0x00000028   Code   RO          157    .text.uart9_callback  hal_entry_1.o
-    0x0000258e   0x0000258e   0x00000002   PAD
-    0x00002590   0x00002590   0x00000034   Code   RO          878    i.__0snprintf       mc_w.l(printfa.o)
-    0x000025c4   0x000025c4   0x00000034   Code   RO          882    i.__0vsnprintf      mc_w.l(printfa.o)
-    0x000025f8   0x000025f8   0x00000184   Code   RO          884    i._fp_digits        mc_w.l(printfa.o)
-    0x0000277c   0x0000277c   0x000006dc   Code   RO          885    i._printf_core      mc_w.l(printfa.o)
-    0x00002e58   0x00002e58   0x00000024   Code   RO          886    i._printf_post_padding  mc_w.l(printfa.o)
-    0x00002e7c   0x00002e7c   0x0000002e   Code   RO          887    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x00002eaa   0x00002eaa   0x00000016   Code   RO          888    i._snputc           mc_w.l(printfa.o)
-    0x00002ec0   0x00002ec0   0x00000008   Data   RO          185    .rodata.Task_Face.reco_cmd  hal_entry_1.o
-    0x00002ec8   0x00002ec8   0x00000006   Data   RO          181    .rodata.Task_HMI.enroll_cmd  hal_entry_1.o
-    0x00002ece   0x00002ece   0x00000006   Data   RO          178    .rodata.Task_HMI.reset_cmd  hal_entry_1.o
-    0x00002ed4   0x00002ed4   0x00000080   Data   RO          438    .rodata.copy_list   bsp_linker.o
-    0x00002f54   0x00002f54   0x0000000c   Data   RO          620    .rodata.g_bsp_pin_cfg  pin_data.o
-    0x00002f60   0x00002f60   0x00000078   Data   RO          619    .rodata.g_bsp_pin_cfg_data  pin_data.o
-    0x00002fd8   0x00002fd8   0x0000000c   Data   RO          578    .rodata.g_i2c5      hal_data.o
-    0x00002fe4   0x00002fe4   0x00000038   Data   RO          576    .rodata.g_i2c5_cfg  hal_data.o
-    0x0000301c   0x0000301c   0x00000006   Data   RO          575    .rodata.g_i2c5_cfg_extend  hal_data.o
-    0x00003022   0x00003022   0x00000002   PAD
-    0x00003024   0x00003024   0x00000020   Data   RO          509    .rodata.g_i2c_master_on_sci  r_sci_i2c.o
-    0x00003044   0x00003044   0x00000018   Data   RO          440    .rodata.g_init_info  bsp_linker.o
-    0x0000305c   0x0000305c   0x00000058   Data   RO          627    .rodata.g_interrupt_event_link_select  vector_data.o
-    0x000030b4   0x000030b4   0x0000000a   Data   RO          382    .rodata.g_prcr_masks  bsp_register_protection.o
-    0x000030be   0x000030be   0x00000002   PAD
-    0x000030c0   0x000030c0   0x00000044   Data   RO          601    .rodata.g_uart2_cfg  hal_data.o
-    0x00003104   0x00003104   0x0000002c   Data   RO          600    .rodata.g_uart2_cfg_extend  hal_data.o
-    0x00003130   0x00003130   0x00000044   Data   RO          596    .rodata.g_uart4_cfg  hal_data.o
-    0x00003174   0x00003174   0x0000002c   Data   RO          595    .rodata.g_uart4_cfg_extend  hal_data.o
-    0x000031a0   0x000031a0   0x00000044   Data   RO          591    .rodata.g_uart7_cfg  hal_data.o
-    0x000031e4   0x000031e4   0x0000002c   Data   RO          590    .rodata.g_uart7_cfg_extend  hal_data.o
-    0x00003210   0x00003210   0x00000044   Data   RO          581    .rodata.g_uart8_cfg  hal_data.o
-    0x00003254   0x00003254   0x0000002c   Data   RO          580    .rodata.g_uart8_cfg_extend  hal_data.o
-    0x00003280   0x00003280   0x00000044   Data   RO          586    .rodata.g_uart9_cfg  hal_data.o
-    0x000032c4   0x000032c4   0x0000002c   Data   RO          585    .rodata.g_uart9_cfg_extend  hal_data.o
-    0x000032f0   0x000032f0   0x00000004   Data   RO          404    .rodata.gp_ddsc_DATA_FLASH_END  bsp_linker.o
-    0x000032f4   0x000032f4   0x00000004   Data   RO          403    .rodata.gp_ddsc_DATA_FLASH_START  bsp_linker.o
-    0x000032f8   0x000032f8   0x00000004   Data   RO          406    .rodata.gp_ddsc_FLASH_END  bsp_linker.o
-    0x000032fc   0x000032fc   0x00000004   Data   RO          407    .rodata.gp_ddsc_FLASH_NSC  bsp_linker.o
-    0x00003300   0x00003300   0x00000004   Data   RO          405    .rodata.gp_ddsc_FLASH_START  bsp_linker.o
-    0x00003304   0x00003304   0x00000004   Data   RO          418    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_END  bsp_linker.o
-    0x00003308   0x00003308   0x00000004   Data   RO          426    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END  bsp_linker.o
-    0x0000330c   0x0000330c   0x00000004   Data   RO          425    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START  bsp_linker.o
-    0x00003310   0x00003310   0x00000004   Data   RO          434    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END  bsp_linker.o
-    0x00003314   0x00003314   0x00000004   Data   RO          433    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START  bsp_linker.o
-    0x00003318   0x00003318   0x00000004   Data   RO          417    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_START  bsp_linker.o
-    0x0000331c   0x0000331c   0x00000004   Data   RO          420    .rodata.gp_ddsc_OPTION_SETTING_BPS_END  bsp_linker.o
-    0x00003320   0x00003320   0x00000004   Data   RO          428    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_END  bsp_linker.o
-    0x00003324   0x00003324   0x00000004   Data   RO          427    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_START  bsp_linker.o
-    0x00003328   0x00003328   0x00000004   Data   RO          436    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_END  bsp_linker.o
-    0x0000332c   0x0000332c   0x00000004   Data   RO          435    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_START  bsp_linker.o
-    0x00003330   0x00003330   0x00000004   Data   RO          419    .rodata.gp_ddsc_OPTION_SETTING_BPS_START  bsp_linker.o
-    0x00003334   0x00003334   0x00000004   Data   RO          414    .rodata.gp_ddsc_OPTION_SETTING_DUALSEL_END  bsp_linker.o
-    0x00003338   0x00003338   0x00000004   Data   RO          413    .rodata.gp_ddsc_OPTION_SETTING_DUALSEL_START  bsp_linker.o
-    0x0000333c   0x0000333c   0x00000004   Data   RO          412    .rodata.gp_ddsc_OPTION_SETTING_OFS0_END  bsp_linker.o
-    0x00003340   0x00003340   0x00000004   Data   RO          411    .rodata.gp_ddsc_OPTION_SETTING_OFS0_START  bsp_linker.o
-    0x00003344   0x00003344   0x00000004   Data   RO          416    .rodata.gp_ddsc_OPTION_SETTING_OFS1_END  bsp_linker.o
-    0x00003348   0x00003348   0x00000004   Data   RO          424    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_END  bsp_linker.o
-    0x0000334c   0x0000334c   0x00000004   Data   RO          423    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_START  bsp_linker.o
-    0x00003350   0x00003350   0x00000004   Data   RO          432    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_END  bsp_linker.o
-    0x00003354   0x00003354   0x00000004   Data   RO          431    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_START  bsp_linker.o
-    0x00003358   0x00003358   0x00000004   Data   RO          415    .rodata.gp_ddsc_OPTION_SETTING_OFS1_START  bsp_linker.o
-    0x0000335c   0x0000335c   0x00000004   Data   RO          422    .rodata.gp_ddsc_OPTION_SETTING_PBPS_END  bsp_linker.o
-    0x00003360   0x00003360   0x00000004   Data   RO          430    .rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_END  bsp_linker.o
-    0x00003364   0x00003364   0x00000004   Data   RO          429    .rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_START  bsp_linker.o
-    0x00003368   0x00003368   0x00000004   Data   RO          421    .rodata.gp_ddsc_OPTION_SETTING_PBPS_START  bsp_linker.o
-    0x0000336c   0x0000336c   0x00000004   Data   RO          402    .rodata.gp_ddsc_OSPI0_CS0_END  bsp_linker.o
-    0x00003370   0x00003370   0x00000004   Data   RO          401    .rodata.gp_ddsc_OSPI0_CS0_START  bsp_linker.o
-    0x00003374   0x00003374   0x00000004   Data   RO          400    .rodata.gp_ddsc_OSPI0_CS1_END  bsp_linker.o
-    0x00003378   0x00003378   0x00000004   Data   RO          399    .rodata.gp_ddsc_OSPI0_CS1_START  bsp_linker.o
-    0x0000337c   0x0000337c   0x00000004   Data   RO          398    .rodata.gp_ddsc_QSPI_FLASH_END  bsp_linker.o
-    0x00003380   0x00003380   0x00000004   Data   RO          397    .rodata.gp_ddsc_QSPI_FLASH_START  bsp_linker.o
-    0x00003384   0x00003384   0x00000004   Data   RO          409    .rodata.gp_ddsc_RAM_END  bsp_linker.o
-    0x00003388   0x00003388   0x00000004   Data   RO          410    .rodata.gp_ddsc_RAM_NSC  bsp_linker.o
-    0x0000338c   0x0000338c   0x00000004   Data   RO          408    .rodata.gp_ddsc_RAM_START  bsp_linker.o
-    0x00003390   0x00003390   0x00000010   Data   RO          439    .rodata.nocache_list  bsp_linker.o
-    0x000033a0   0x000033a0   0x0000026a   Data   RO          169    .rodata.str1.1      hal_entry_1.o
-    0x0000360a   0x0000360a   0x00000002   PAD
-    0x0000360c   0x0000360c   0x00000030   Data   RO          437    .rodata.zero_list   bsp_linker.o
-    0x0000363c   0x0000363c   0x00000004   Data   RO          320    .version            bsp_common.o
-    0x00003640   0x00003640   0x00000006   Data   RO          321    .version            bsp_common.o
-    0x00003646   0x00003646   0x00000044   Data   RO          322    .version            bsp_common.o
-
-
-    Execution Region __init_array_start (Exec base: 0x0000368c, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+    Execution Region __flash_readonly (Exec base: 0x000000ec, Load base: 0x000000ec, Size: 0x00004364, Max: 0xffffffff, ABSOLUTE, FIXED)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x0000368c        -       0x00000000   Zero   RW           50    __init_array_start.bss  anon$$obj.o
+    0x000000ec   0x000000ec   0x00000024   Code   RO          652    .text               mc_w.l(memcpya.o)
+    0x00000110   0x00000110   0x00000024   Code   RO          654    .text               mc_w.l(memseta.o)
+    0x00000134   0x00000134   0x00000024   Code   RO          656    .text               mc_w.l(strstr.o)
+    0x00000158   0x00000158   0x0000001a   Code   RO          658    .text               mc_w.l(memcmp.o)
+    0x00000172   0x00000172   0x00000002   PAD
+    0x00000174   0x00000174   0x00000038   Code   RO          923    .text               mc_w.l(__0sscanf.o)
+    0x000001ac   0x000001ac   0x00000360   Code   RO          925    .text               mc_w.l(scanf_fp.o)
+    0x0000050c   0x0000050c   0x00000026   Code   RO          930    .text               mf_w.l(f2d.o)
+    0x00000532   0x00000532   0x0000002c   Code   RO          946    .text               mc_w.l(uidiv.o)
+    0x0000055e   0x0000055e   0x00000062   Code   RO          948    .text               mc_w.l(uldiv.o)
+    0x000005c0   0x000005c0   0x00000028   Code   RO          950    .text               mc_w.l(scanf_char.o)
+    0x000005e8   0x000005e8   0x00000040   Code   RO          952    .text               mc_w.l(_sgetc.o)
+    0x00000628   0x00000628   0x00000000   Code   RO          954    .text               mc_w.l(iusefp.o)
+    0x00000628   0x00000628   0x0000014e   Code   RO          955    .text               mf_w.l(dadd.o)
+    0x00000776   0x00000776   0x000000e4   Code   RO          957    .text               mf_w.l(dmul.o)
+    0x0000085a   0x0000085a   0x000000de   Code   RO          959    .text               mf_w.l(ddiv.o)
+    0x00000938   0x00000938   0x00000018   Code   RO          961    .text               mf_w.l(dfltul.o)
+    0x00000950   0x00000950   0x00000030   Code   RO          963    .text               mf_w.l(dfixul.o)
+    0x00000980   0x00000980   0x00000030   Code   RO          965    .text               mf_w.l(cdrcmple.o)
+    0x000009b0   0x000009b0   0x00000038   Code   RO          967    .text               mf_w.l(d2f.o)
+    0x000009e8   0x000009e8   0x0000001e   Code   RO          970    .text               mc_w.l(llshl.o)
+    0x00000a06   0x00000a06   0x00000020   Code   RO          972    .text               mc_w.l(llushr.o)
+    0x00000a26   0x00000a26   0x00000024   Code   RO          974    .text               mc_w.l(llsshr.o)
+    0x00000a4a   0x00000a4a   0x0000000a   Code   RO          976    .text               mc_w.l(isspace_c.o)
+    0x00000a54   0x00000a54   0x0000032c   Code   RO          978    .text               mc_w.l(_scanf.o)
+    0x00000d80   0x00000d80   0x0000006e   Code   RO          981    .text               mf_w.l(fepilogue.o)
+    0x00000dee   0x00000dee   0x000000ba   Code   RO          983    .text               mf_w.l(depilogue.o)
+    0x00000ea8   0x00000ea8   0x00000028   Code   RO          985    .text               mc_w.l(ctype_c.o)
+    0x00000ed0   0x00000ed0   0x00000046   Code   RO          256    .text.Bh1750_Init   driver_bh1750_1.o
+    0x00000f16   0x00000f16   0x00000002   PAD
+    0x00000f18   0x00000f18   0x000000b4   Code   RO          260    .text.Bh1750_ReadLux  driver_bh1750_1.o
+    0x00000fcc   0x00000fcc   0x00000004   Code   RO          272    .text.Default_Handler  startup.o
+    0x00000fd0   0x00000fd0   0x000001ac   Code   RO          223    .text.Dht22_Read    driver_dht22_1.o
+    0x0000117c   0x0000117c   0x00000320   Code   RO          151    .text.Farm_Data_Analysis  farm_analysis.o
+    0x0000149c   0x0000149c   0x0000001a   Code   RO          149    .text.Farm_Data_Init  farm_analysis.o
+    0x000014b6   0x000014b6   0x00000002   PAD
+    0x000014b8   0x000014b8   0x00000038   Code   RO          175    .text.Hmi_SendCmd   hal_entry_1.o
+    0x000014f0   0x000014f0   0x00000044   Code   RO          361    .text.NMI_Handler   bsp_group_irq.o
+    0x00001534   0x00001534   0x0000007a   Code   RO          319    .text.R_BSP_Init_RTC  bsp_clocks.o
+    0x000015ae   0x000015ae   0x0000004e   Code   RO          395    .text.R_BSP_RegisterProtectDisable  bsp_register_protection.o
+    0x000015fc   0x000015fc   0x00000052   Code   RO          393    .text.R_BSP_RegisterProtectEnable  bsp_register_protection.o
+    0x0000164e   0x0000164e   0x00000084   Code   RO          347    .text.R_BSP_SoftwareDelay  bsp_delay.o
+    0x000016d2   0x000016d2   0x00000002   Code   RO          313    .text.R_BSP_SubClockStabilizeWaitAfterReset  bsp_clocks.o
+    0x000016d4   0x000016d4   0x0000001a   Code   RO          214    .text.R_BSP_WarmStart  hal_warmstart_1.o
+    0x000016ee   0x000016ee   0x00000016   Code   RO          462    .text.R_IOPORT_Open  r_ioport.o
+    0x00001704   0x00001704   0x000000b2   Code   RO          468    .text.R_IOPORT_PinCfg  r_ioport.o
+    0x000017b6   0x000017b6   0x00000022   Code   RO          474    .text.R_IOPORT_PinRead  r_ioport.o
+    0x000017d8   0x000017d8   0x00000028   Code   RO          476    .text.R_IOPORT_PinWrite  r_ioport.o
+    0x00001800   0x00001800   0x00000028   Code   RO          507    .text.R_SCI_I2C_Abort  r_sci_i2c.o
+    0x00001828   0x00001828   0x0000000e   Code   RO          511    .text.R_SCI_I2C_CallbackSet  r_sci_i2c.o
+    0x00001836   0x00001836   0x00000056   Code   RO          515    .text.R_SCI_I2C_Close  r_sci_i2c.o
+    0x0000188c   0x0000188c   0x0000015a   Code   RO          501    .text.R_SCI_I2C_Open  r_sci_i2c.o
+    0x000019e6   0x000019e6   0x00000010   Code   RO          503    .text.R_SCI_I2C_Read  r_sci_i2c.o
+    0x000019f6   0x000019f6   0x0000000a   Code   RO          509    .text.R_SCI_I2C_SlaveAddressSet  r_sci_i2c.o
+    0x00001a00   0x00001a00   0x00000018   Code   RO          513    .text.R_SCI_I2C_StatusGet  r_sci_i2c.o
+    0x00001a18   0x00001a18   0x00000010   Code   RO          505    .text.R_SCI_I2C_Write  r_sci_i2c.o
+    0x00001a28   0x00001a28   0x0000033c   Code   RO          534    .text.R_SCI_UART_Open  r_sci_uart.o
+    0x00001d64   0x00001d64   0x0000000a   Code   RO          536    .text.R_SCI_UART_Read  r_sci_uart.o
+    0x00001d6e   0x00001d6e   0x0000004c   Code   RO          538    .text.R_SCI_UART_Write  r_sci_uart.o
+    0x00001dba   0x00001dba   0x00000002   PAD
+    0x00001dbc   0x00001dbc   0x0000000a   Code   RO          270  * .text.Reset_Handler  startup.o
+    0x00001dc6   0x00001dc6   0x0000002c   Code   RO          303    .text.SystemCoreClockUpdate  bsp_clocks.o
+    0x00001df2   0x00001df2   0x00000002   PAD
+    0x00001df4   0x00001df4   0x000000a2   Code   RO          284    .text.SystemInit    system.o
+    0x00001e96   0x00001e96   0x00000002   PAD
+    0x00001e98   0x00001e98   0x0000005a   Code   RO          288    .text.SystemRuntimeInit  system.o
+    0x00001ef2   0x00001ef2   0x00000008   Code   RO          234    .text.Uart_Init     driver_uart_1.o
+    0x00001efa   0x00001efa   0x00000002   PAD
+    0x00001efc   0x00001efc   0x00000050   Code   RO          240    .text.Uart_Printf   driver_uart_1.o
+    0x00001f4c   0x00001f4c   0x00000020   Code   RO          238    .text.Uart_Send     driver_uart_1.o
+    0x00001f6c   0x00001f6c   0x0000000c   Code   RO          236    .text.Uart_StartRx  driver_uart_1.o
+    0x00001f78   0x00001f78   0x00000070   Code   RO          258    .text.bh1750_write_cmd  driver_bh1750_1.o
+    0x00001fe8   0x00001fe8   0x0000013c   Code   RO          309    .text.bsp_clock_init  bsp_clocks.o
+    0x00002124   0x00002124   0x00000002   Code   RO          330    .text.bsp_init_internal  bsp_common.o
+    0x00002126   0x00002126   0x00000002   PAD
+    0x00002128   0x00002128   0x0000008a   Code   RO          380    .text.bsp_irq_cfg   bsp_irq.o
+    0x000021b2   0x000021b2   0x00000008   Code   RO          349    .text.bsp_prv_software_delay_loop  bsp_delay.o
+    0x000021ba   0x000021ba   0x00000002   PAD
+    0x000021bc   0x000021bc   0x000000d8   Code   RO          490    .text.bsp_vbatt_init  r_ioport.o
+    0x00002294   0x00002294   0x00000970   Code   RO          177    .text.hal_entry     hal_entry_1.o
+    0x00002c04   0x00002c04   0x0000000a   Code   RO          626    .text.main          main.o
+    0x00002c0e   0x00002c0e   0x00000002   PAD
+    0x00002c10   0x00002c10   0x000000c0   Code   RO          488    .text.r_ioport_pins_config  r_ioport.o
+    0x00002cd0   0x00002cd0   0x00000040   Code   RO          560    .text.r_sci_uart_call_callback  r_sci_uart.o
+    0x00002d10   0x00002d10   0x00000032   Code   RO          163    .text.sci_i2c_master_callback  hal_entry_1.o
+    0x00002d42   0x00002d42   0x00000098   Code   RO          517    .text.sci_i2c_read_write  r_sci_i2c.o
+    0x00002dda   0x00002dda   0x0000011c   Code   RO          523    .text.sci_i2c_tei_isr  r_sci_i2c.o
+    0x00002ef6   0x00002ef6   0x00000128   Code   RO          521    .text.sci_i2c_txi_isr  r_sci_i2c.o
+    0x0000301e   0x0000301e   0x0000006a   Code   RO          566    .text.sci_uart_eri_isr  r_sci_uart.o
+    0x00003088   0x00003088   0x00000088   Code   RO          562    .text.sci_uart_rxi_isr  r_sci_uart.o
+    0x00003110   0x00003110   0x0000004a   Code   RO          564    .text.sci_uart_tei_isr  r_sci_uart.o
+    0x0000315a   0x0000315a   0x00000088   Code   RO          558    .text.sci_uart_txi_isr  r_sci_uart.o
+    0x000031e2   0x000031e2   0x00000016   Code   RO          165    .text.uart2_callback  hal_entry_1.o
+    0x000031f8   0x000031f8   0x00000028   Code   RO          167    .text.uart4_callback  hal_entry_1.o
+    0x00003220   0x00003220   0x00000016   Code   RO          169    .text.uart7_callback  hal_entry_1.o
+    0x00003236   0x00003236   0x00000028   Code   RO          173    .text.uart8_callback  hal_entry_1.o
+    0x0000325e   0x0000325e   0x00000028   Code   RO          171    .text.uart9_callback  hal_entry_1.o
+    0x00003286   0x00003286   0x00000002   PAD
+    0x00003288   0x00003288   0x00000034   Code   RO          896    i.__0snprintf       mc_w.l(printfa.o)
+    0x000032bc   0x000032bc   0x00000034   Code   RO          900    i.__0vsnprintf      mc_w.l(printfa.o)
+    0x000032f0   0x000032f0   0x00000184   Code   RO          902    i._fp_digits        mc_w.l(printfa.o)
+    0x00003474   0x00003474   0x0000000e   Code   RO          928    i._is_digit         mc_w.l(scanf_fp.o)
+    0x00003482   0x00003482   0x00000002   PAD
+    0x00003484   0x00003484   0x000006dc   Code   RO          903    i._printf_core      mc_w.l(printfa.o)
+    0x00003b60   0x00003b60   0x00000024   Code   RO          904    i._printf_post_padding  mc_w.l(printfa.o)
+    0x00003b84   0x00003b84   0x0000002e   Code   RO          905    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x00003bb2   0x00003bb2   0x00000016   Code   RO          906    i._snputc           mc_w.l(printfa.o)
+    0x00003bc8   0x00003bc8   0x00000040   Data   RO          986    .constdata          mc_w.l(ctype_c.o)
+    0x00003c08   0x00003c08   0x00000008   Data   RO          200    .rodata.Task_Face.reco_cmd  hal_entry_1.o
+    0x00003c10   0x00003c10   0x00000006   Data   RO          195    .rodata.Task_HMI.enroll_cmd  hal_entry_1.o
+    0x00003c16   0x00003c16   0x00000006   Data   RO          192    .rodata.Task_HMI.reset_cmd  hal_entry_1.o
+    0x00003c1c   0x00003c1c   0x00000080   Data   RO          454    .rodata.copy_list   bsp_linker.o
+    0x00003c9c   0x00003c9c   0x0000000c   Data   RO          636    .rodata.g_bsp_pin_cfg  pin_data.o
+    0x00003ca8   0x00003ca8   0x00000078   Data   RO          635    .rodata.g_bsp_pin_cfg_data  pin_data.o
+    0x00003d20   0x00003d20   0x0000000c   Data   RO          594    .rodata.g_i2c5      hal_data.o
+    0x00003d2c   0x00003d2c   0x00000038   Data   RO          592    .rodata.g_i2c5_cfg  hal_data.o
+    0x00003d64   0x00003d64   0x00000006   Data   RO          591    .rodata.g_i2c5_cfg_extend  hal_data.o
+    0x00003d6a   0x00003d6a   0x00000002   PAD
+    0x00003d6c   0x00003d6c   0x00000020   Data   RO          525    .rodata.g_i2c_master_on_sci  r_sci_i2c.o
+    0x00003d8c   0x00003d8c   0x00000018   Data   RO          456    .rodata.g_init_info  bsp_linker.o
+    0x00003da4   0x00003da4   0x00000058   Data   RO          643    .rodata.g_interrupt_event_link_select  vector_data.o
+    0x00003dfc   0x00003dfc   0x0000000a   Data   RO          398    .rodata.g_prcr_masks  bsp_register_protection.o
+    0x00003e06   0x00003e06   0x00000002   PAD
+    0x00003e08   0x00003e08   0x00000044   Data   RO          617    .rodata.g_uart2_cfg  hal_data.o
+    0x00003e4c   0x00003e4c   0x0000002c   Data   RO          616    .rodata.g_uart2_cfg_extend  hal_data.o
+    0x00003e78   0x00003e78   0x00000044   Data   RO          612    .rodata.g_uart4_cfg  hal_data.o
+    0x00003ebc   0x00003ebc   0x0000002c   Data   RO          611    .rodata.g_uart4_cfg_extend  hal_data.o
+    0x00003ee8   0x00003ee8   0x00000044   Data   RO          607    .rodata.g_uart7_cfg  hal_data.o
+    0x00003f2c   0x00003f2c   0x0000002c   Data   RO          606    .rodata.g_uart7_cfg_extend  hal_data.o
+    0x00003f58   0x00003f58   0x00000044   Data   RO          597    .rodata.g_uart8_cfg  hal_data.o
+    0x00003f9c   0x00003f9c   0x0000002c   Data   RO          596    .rodata.g_uart8_cfg_extend  hal_data.o
+    0x00003fc8   0x00003fc8   0x00000044   Data   RO          602    .rodata.g_uart9_cfg  hal_data.o
+    0x0000400c   0x0000400c   0x0000002c   Data   RO          601    .rodata.g_uart9_cfg_extend  hal_data.o
+    0x00004038   0x00004038   0x00000004   Data   RO          420    .rodata.gp_ddsc_DATA_FLASH_END  bsp_linker.o
+    0x0000403c   0x0000403c   0x00000004   Data   RO          419    .rodata.gp_ddsc_DATA_FLASH_START  bsp_linker.o
+    0x00004040   0x00004040   0x00000004   Data   RO          422    .rodata.gp_ddsc_FLASH_END  bsp_linker.o
+    0x00004044   0x00004044   0x00000004   Data   RO          423    .rodata.gp_ddsc_FLASH_NSC  bsp_linker.o
+    0x00004048   0x00004048   0x00000004   Data   RO          421    .rodata.gp_ddsc_FLASH_START  bsp_linker.o
+    0x0000404c   0x0000404c   0x00000004   Data   RO          434    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_END  bsp_linker.o
+    0x00004050   0x00004050   0x00000004   Data   RO          442    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_END  bsp_linker.o
+    0x00004054   0x00004054   0x00000004   Data   RO          441    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEC_START  bsp_linker.o
+    0x00004058   0x00004058   0x00000004   Data   RO          450    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_END  bsp_linker.o
+    0x0000405c   0x0000405c   0x00000004   Data   RO          449    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_SEL_START  bsp_linker.o
+    0x00004060   0x00004060   0x00000004   Data   RO          433    .rodata.gp_ddsc_OPTION_SETTING_BANKSEL_START  bsp_linker.o
+    0x00004064   0x00004064   0x00000004   Data   RO          436    .rodata.gp_ddsc_OPTION_SETTING_BPS_END  bsp_linker.o
+    0x00004068   0x00004068   0x00000004   Data   RO          444    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_END  bsp_linker.o
+    0x0000406c   0x0000406c   0x00000004   Data   RO          443    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEC_START  bsp_linker.o
+    0x00004070   0x00004070   0x00000004   Data   RO          452    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_END  bsp_linker.o
+    0x00004074   0x00004074   0x00000004   Data   RO          451    .rodata.gp_ddsc_OPTION_SETTING_BPS_SEL_START  bsp_linker.o
+    0x00004078   0x00004078   0x00000004   Data   RO          435    .rodata.gp_ddsc_OPTION_SETTING_BPS_START  bsp_linker.o
+    0x0000407c   0x0000407c   0x00000004   Data   RO          430    .rodata.gp_ddsc_OPTION_SETTING_DUALSEL_END  bsp_linker.o
+    0x00004080   0x00004080   0x00000004   Data   RO          429    .rodata.gp_ddsc_OPTION_SETTING_DUALSEL_START  bsp_linker.o
+    0x00004084   0x00004084   0x00000004   Data   RO          428    .rodata.gp_ddsc_OPTION_SETTING_OFS0_END  bsp_linker.o
+    0x00004088   0x00004088   0x00000004   Data   RO          427    .rodata.gp_ddsc_OPTION_SETTING_OFS0_START  bsp_linker.o
+    0x0000408c   0x0000408c   0x00000004   Data   RO          432    .rodata.gp_ddsc_OPTION_SETTING_OFS1_END  bsp_linker.o
+    0x00004090   0x00004090   0x00000004   Data   RO          440    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_END  bsp_linker.o
+    0x00004094   0x00004094   0x00000004   Data   RO          439    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEC_START  bsp_linker.o
+    0x00004098   0x00004098   0x00000004   Data   RO          448    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_END  bsp_linker.o
+    0x0000409c   0x0000409c   0x00000004   Data   RO          447    .rodata.gp_ddsc_OPTION_SETTING_OFS1_SEL_START  bsp_linker.o
+    0x000040a0   0x000040a0   0x00000004   Data   RO          431    .rodata.gp_ddsc_OPTION_SETTING_OFS1_START  bsp_linker.o
+    0x000040a4   0x000040a4   0x00000004   Data   RO          438    .rodata.gp_ddsc_OPTION_SETTING_PBPS_END  bsp_linker.o
+    0x000040a8   0x000040a8   0x00000004   Data   RO          446    .rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_END  bsp_linker.o
+    0x000040ac   0x000040ac   0x00000004   Data   RO          445    .rodata.gp_ddsc_OPTION_SETTING_PBPS_SEC_START  bsp_linker.o
+    0x000040b0   0x000040b0   0x00000004   Data   RO          437    .rodata.gp_ddsc_OPTION_SETTING_PBPS_START  bsp_linker.o
+    0x000040b4   0x000040b4   0x00000004   Data   RO          418    .rodata.gp_ddsc_OSPI0_CS0_END  bsp_linker.o
+    0x000040b8   0x000040b8   0x00000004   Data   RO          417    .rodata.gp_ddsc_OSPI0_CS0_START  bsp_linker.o
+    0x000040bc   0x000040bc   0x00000004   Data   RO          416    .rodata.gp_ddsc_OSPI0_CS1_END  bsp_linker.o
+    0x000040c0   0x000040c0   0x00000004   Data   RO          415    .rodata.gp_ddsc_OSPI0_CS1_START  bsp_linker.o
+    0x000040c4   0x000040c4   0x00000004   Data   RO          414    .rodata.gp_ddsc_QSPI_FLASH_END  bsp_linker.o
+    0x000040c8   0x000040c8   0x00000004   Data   RO          413    .rodata.gp_ddsc_QSPI_FLASH_START  bsp_linker.o
+    0x000040cc   0x000040cc   0x00000004   Data   RO          425    .rodata.gp_ddsc_RAM_END  bsp_linker.o
+    0x000040d0   0x000040d0   0x00000004   Data   RO          426    .rodata.gp_ddsc_RAM_NSC  bsp_linker.o
+    0x000040d4   0x000040d4   0x00000004   Data   RO          424    .rodata.gp_ddsc_RAM_START  bsp_linker.o
+    0x000040d8   0x000040d8   0x00000010   Data   RO          455    .rodata.nocache_list  bsp_linker.o
+    0x000040e8   0x000040e8   0x000001fe   Data   RO          154    .rodata.str1.1      farm_analysis.o
+    0x000042e6   0x000042e6   0x000000e8   Data   RO          196    .rodata.str1.1      hal_entry_1.o
+    0x000043ce   0x000043ce   0x00000002   PAD
+    0x000043d0   0x000043d0   0x00000030   Data   RO          453    .rodata.zero_list   bsp_linker.o
+    0x00004400   0x00004400   0x00000004   Data   RO          336    .version            bsp_common.o
+    0x00004404   0x00004404   0x00000006   Data   RO          337    .version            bsp_common.o
+    0x0000440a   0x0000440a   0x00000044   Data   RO          338    .version            bsp_common.o
 
 
-    Execution Region __flash_init_array (Exec base: 0x0000368c, Load base: 0x0000368c, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE, FIXED)
+    Execution Region __init_array_start (Exec base: 0x00004450, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00004450        -       0x00000000   Zero   RW           50    __init_array_start.bss  anon$$obj.o
+
+
+    Execution Region __flash_init_array (Exec base: 0x00004450, Load base: 0x00004450, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE, FIXED)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region __init_array_end (Exec base: 0x0000368c, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+    Execution Region __init_array_end (Exec base: 0x00004450, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x0000368c        -       0x00000000   Zero   RW           51    __init_array_end.bss  anon$$obj.o
+    0x00004450        -       0x00000000   Zero   RW           51    __init_array_end.bss  anon$$obj.o
 
 
-    Execution Region __ddsc_FLASH_END (Exec base: 0x00003800, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x00003800        -       0x00000000   Zero   RW           52    __ddsc_FLASH_END.bss  anon$$obj.o
-
-
-    Execution Region .flash.endof (Exec base: 0x00003800, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+    Execution Region __ddsc_FLASH_END (Exec base: 0x00004800, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00003800        -       0x00000000   Zero   RW           53    .flash.endof.bss    anon$$obj.o
+    0x00004800        -       0x00000000   Zero   RW           52    __ddsc_FLASH_END.bss  anon$$obj.o
 
 
-    Execution Region __ddsc_FLASH_NSC (Exec base: 0x00003800, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x00003800        -       0x00000000   Zero   RW           54    __ddsc_FLASH_NSC.bss  anon$$obj.o
-
-
-    Execution Region .flash.flat_nsc (Exec base: 0x00003800, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+    Execution Region .flash.endof (Exec base: 0x00004800, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00003800        -       0x00000000   Zero   RW           55    .flash.flat_nsc.bss  anon$$obj.o
+    0x00004800        -       0x00000000   Zero   RW           53    .flash.endof.bss    anon$$obj.o
 
 
-    Execution Region __FLASH_end (Exec base: 0x00003800, Load base: 0x0000368c, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+    Execution Region __ddsc_FLASH_NSC (Exec base: 0x00004800, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00003800        -       0x00000000   Zero   RW           56    __FLASH_end.bss     anon$$obj.o
+    0x00004800        -       0x00000000   Zero   RW           54    __ddsc_FLASH_NSC.bss  anon$$obj.o
+
+
+    Execution Region .flash.flat_nsc (Exec base: 0x00004800, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00004800        -       0x00000000   Zero   RW           55    .flash.flat_nsc.bss  anon$$obj.o
+
+
+    Execution Region __FLASH_end (Exec base: 0x00004800, Load base: 0x00004450, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00004800        -       0x00000000   Zero   RW           56    __FLASH_end.bss     anon$$obj.o
 
 
 
@@ -2223,7 +2387,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x0100a100   0x0100a100   0x00000004   Data   RO          394    .option_setting_ofs0  bsp_linker.o
+    0x0100a100   0x0100a100   0x00000004   Data   RO          410    .option_setting_ofs0  bsp_linker.o
 
 
     Execution Region __ddsc_OPTION_SETTING_OFS0_END (Exec base: 0x0100a104, Load base: 0x0100a104, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
@@ -2567,7 +2731,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x0100a200   0x0100a200   0x00000004   Data   RO          395    .option_setting_ofs1_sec  bsp_linker.o
+    0x0100a200   0x0100a200   0x00000004   Data   RO          411    .option_setting_ofs1_sec  bsp_linker.o
 
 
     Execution Region __ddsc_OPTION_SETTING_OFS1_SEC_END (Exec base: 0x0100a204, Load base: 0x0100a204, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
@@ -2797,7 +2961,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x0100a280   0x0100a280   0x00000004   Data   RO          396    .option_setting_ofs1_sel  bsp_linker.o
+    0x0100a280   0x0100a280   0x00000004   Data   RO          412    .option_setting_ofs1_sel  bsp_linker.o
 
 
     Execution Region __ddsc_OPTION_SETTING_OFS1_SEL_END (Exec base: 0x0100a284, Load base: 0x0100a284, Size: 0x00000000, Max: 0x00000000, ABSOLUTE)
@@ -2954,8 +3118,9 @@ Image component sizes
        362          4          0          0          0      15930   driver_bh1750_1.o
        428          0          0          4          0      18951   driver_dht22_1.o
        132          0          0         60        256      15403   driver_uart_1.o
+       826        152        510          0         28      15218   farm_analysis.o
          0          0        634         20        312      35722   hal_data.o
-      2306        148        638          0        895      27283   hal_entry_1.o
+      2686        164        252          0        951      27880   hal_entry_1.o
         26          0          0          0          0      16816   hal_warmstart_1.o
         10          0          0          0          0        411   main.o
          0          0        132          0          0       8016   pin_data.o
@@ -2967,14 +3132,19 @@ Image component sizes
          0          0        176          0          0       9861   vector_data.o
 
     ----------------------------------------------------------------------
-      7936        164       2160         84       2708     454152   Object Totals
+      9144        332       2284         84       2796     469967   Object Totals
          0          0          0          0          0          0   (incl. Generated)
-        18          0          8          0         15          0   (incl. Padding)
+        20          0          8          0         19          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
 
+        56          8          0          0          0         84   __0sscanf.o
+       812          4          0          0          0        112   _scanf.o
+        64          0          0          0          0         84   _sgetc.o
+        40          6         64          0          0         68   ctype_c.o
+        10          0          0          0          0         68   isspace_c.o
          0          0          0          0          0          0   iusefp.o
         30          0          0          0          0         68   llshl.o
         36          0          0          0          0         68   llsshr.o
@@ -2983,29 +3153,35 @@ Image component sizes
         36          0          0          0          0         68   memcpya.o
         36          0          0          0          0        108   memseta.o
       2352         90          0          0          0        604   printfa.o
+        40          8          0          0          0         84   scanf_char.o
+       878         12          0          0          0        216   scanf_fp.o
+        36          0          0          0          0         80   strstr.o
         44          0          0          0          0         80   uidiv.o
         98          0          0          0          0         92   uldiv.o
         48          0          0          0          0         68   cdrcmple.o
+        56          0          0          0          0         88   d2f.o
        334          0          0          0          0        148   dadd.o
        222          0          0          0          0        100   ddiv.o
        186          0          0          0          0        176   depilogue.o
         48          0          0          0          0         68   dfixul.o
+        24          0          0          0          0         76   dfltul.o
        228          0          0          0          0         96   dmul.o
         38          0          0          0          0         68   f2d.o
+       110          0          0          0          0        168   fepilogue.o
 
     ----------------------------------------------------------------------
-      3796         90          0          0          0       1960   Library Totals
-         2          0          0          0          0          0   (incl. Padding)
+      5924        128         64          0          0       3088   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-      2690         90          0          0          0       1236   mc_w.l
-      1104          0          0          0          0        724   mf_w.l
+      4626        128         64          0          0       2032   mc_w.l
+      1294          0          0          0          0       1056   mf_w.l
 
     ----------------------------------------------------------------------
-      3796         90          0          0          0       1960   Library Totals
+      5924        128         64          0          0       3088   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -3014,15 +3190,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     11732        254       2160         84       2708     454804   Grand Totals
-     11732        254       2160         84       2708     454804   ELF Image Totals
-     11732        254       2160         84          0          0   ROM Totals
+     15068        460       2348         84       2796     471103   Grand Totals
+     15068        460       2348         84       2796     471103   ELF Image Totals
+     15068        460       2348         84          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                13892 (  13.57kB)
-    Total RW  Size (RW Data + ZI Data)              2792 (   2.73kB)
-    Total ROM Size (Code + RO Data + RW Data)      13976 (  13.65kB)
+    Total RO  Size (Code + RO Data)                17416 (  17.01kB)
+    Total RW  Size (RW Data + ZI Data)              2880 (   2.81kB)
+    Total ROM Size (Code + RO Data + RW Data)      17500 (  17.09kB)
 
 ==============================================================================
 
